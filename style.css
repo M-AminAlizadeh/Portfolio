@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  --main-purple-color: #6070FF;
+:root {
+  --main-purple-color: #6070ff;
 }
 
-.toolbar-container{
+.toolbar-container {
   /* border:2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:90%;
+  width: 90%;
   margin: 44px auto;
 }
 
-.toolbar-brandname{
+.toolbar-brandname {
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;   
-	font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 20px;
-  letter-spacing: 0em;
-	text-align: center;
-  color:var(--main-purple-color); 
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--main-purple-color);
 }
