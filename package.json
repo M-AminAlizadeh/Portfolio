@@ -2,5 +2,8 @@
   "dependencies": {
     "lighthouse": "^10.0.2",
     "node-modules": "^1.0.1"
+  },
+  "devDependencies": {
+    "hint": "^7.1.5"
   }
 }
