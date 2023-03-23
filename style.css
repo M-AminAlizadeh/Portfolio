@@ -76,6 +76,7 @@
   /* border:1px solid rgb(0, 128, 122); */
   display: flex;
   align-items: center;
+  list-style: none;
 }
 
 .headline-socialmedia-icons-container img {
