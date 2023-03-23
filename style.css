@@ -31,7 +31,7 @@
   color: var(--main-purple-color);
 }
 
-.navbar-links-container{
+.navbar-links-container {
   display: none;
 }
 
@@ -80,19 +80,19 @@
 .headline-socialmedia-icons-container img {
   /* border:2px solid rgb(0, 70, 128); */
   margin: 1px 20px 1px 0;
-  width:20px;
+  width: 20px;
 }
 
 /* Desktop screen */
-@media (min-width:768px) {
-  .toolbar-container{
+@media (min-width: 768px) {
+  .toolbar-container {
     /* border:2px solid orange; */
-    position:fixed;
-    top:0;
-    width:100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
-  .toolbar-content-container{
+  .toolbar-content-container {
     /* border:2px solid green; */
     width: 80%;
   }
@@ -101,7 +101,7 @@
     display: none;
   }
 
-  .navbar-links-container{
+  .navbar-links-container {
     /* border: 1px solid orange; */
     display: flex;
     list-style-type: none;
@@ -109,31 +109,32 @@
 
   .navbar-links-container a {
     text-decoration: none;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
-    margin:0px 32px;
-    color:var(--secondary-color);
+    margin: 0 32px;
+    color: var(--secondary-color);
   }
 
   .headline-container {
     /* border:2px solid red; */
     background-image: url(images/Header\ bg.svg);
-    margin:110px 20px;
+    margin: 110px 20px;
     display: flex;
     flex-direction: column;
   }
 
-  .headline-content-container{
+  .headline-content-container {
     /* border:2px solid green; */
-    width:70%;margin:auto;
+    width: 70%;
+    margin: auto;
   }
 
-  .headline-greeting{
-    font-family: Poppins;
+  .headline-greeting {
+    font-family: 'Poppins', sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
@@ -143,16 +144,15 @@
 
   .headline-text {
     width: 95%;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
-  .headline-connect-text{
-    margin-top:30px;
+  .headline-connect-text {
+    margin-top: 30px;
   }
-
 }
