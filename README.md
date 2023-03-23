@@ -8,27 +8,28 @@
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  <!-- - [Prerequisites](#prerequisites)
+  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment) -->
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-<!-- - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq) -->
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-
 # 📖 [Portfolio] <a name="about-project"></a>
-This is my Portfolio
+This is my Portfolio repository
+
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
 - HTML
 - CSS
 
@@ -36,6 +37,7 @@ This is my Portfolio
 
 ### Key Features <a name="key-features"></a>
 
+- **[Using linters]**
 - **Mobile First and Responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -44,7 +46,7 @@ This is my Portfolio
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://frabjous-melomakarona-10efb2.netlify.app/)
+- [Live Demo](https://frabjous-melomakarona-10efb2.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,32 +54,37 @@ This is my Portfolio
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-<!-- > Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need: -->
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
-Clone this repository to your desired folder and use it
+Clone this repository to your local machine
+
+
+### Install
+
+<!-- Install this project with: -->
+
+### Usage
+
+<!-- To run the project, execute the following command: -->
+
+
+
+### Run tests
+
+<!-- To run tests, run the following command: -->
+
+### Deployment
+
+<!-- You can deploy this project using: -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Amin Alizadeh**
 
@@ -89,13 +96,11 @@ Clone this repository to your desired folder and use it
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- [ ] **[new_feature_1]** -->
 
--  **More interactive with user**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
 
@@ -103,44 +108,23 @@ Clone this repository to your desired folder and use it
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/M-AminAlizadeh/Portfolio/issues).
+Feel free to check the [issues page](https://github.com/M-AminAlizadeh/Hello-world/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
-
-If you like this project don't forget to star it 
+If you like this project don't forget to star it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+I would like to thanks Microverse
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank... -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- FAQ (optional) -->
-
-<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
