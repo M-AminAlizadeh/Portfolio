@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -9,16 +9,31 @@
 :root {
   --main-purple-color: #6070ff;
   --secondary-color: #344563;
+  --font-heavey-pruple-color: #172b4d;
+  --light-grey-color: #7a869a;
+  --very-light-puple-color: #ebebff;
+}
+
+body {
+  background-color: #e5e5e5;
+  position: relative;
+  z-index: -1;
 }
 
 /* Toolbar */
+.toolbar-container {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .toolbar-content-container {
-  /* border:2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 44px auto;
+  margin: 40px auto;
 }
 
 .toolbar-brandname {
@@ -40,8 +55,11 @@
 .headline-container {
   /* border: 1px solid red; */
   background-image: url(images/header-shapes\ mobile@2x.svg);
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
   padding: 114px 24px 12px 24px;
+  margin-top: 108px;
+  border-radius: 0 0 0 50px;
 }
 
 .headline-greeting {
@@ -51,7 +69,7 @@
   line-height: 52px;
   letter-spacing: 0;
   text-align: left;
-  color: #172b4d;
+  color: var(--font-heavey-pruple-color);
   margin-bottom: 10px;
 }
 
@@ -73,27 +91,201 @@
 }
 
 .headline-socialmedia-icons-container {
-  /* border:1px solid rgb(0, 128, 122); */
   display: flex;
   align-items: center;
   list-style: none;
 }
 
 .headline-socialmedia-icons-container img {
-  /* border:2px solid rgb(0, 70, 128); */
   margin: 1px 20px 1px 0;
   width: 20px;
 }
 
+/* Works */
+.works-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 88px;
+  margin: 114px 24px;
+}
+
+/* Card */
+.card-container {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.card-preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-info-title {
+  width: 60%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--font-heavey-pruple-color);
+}
+
+.card-info-details-container {
+  margin: 12px 0;
+}
+
+.card-info-client-name {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--secondary-color);
+  margin: 12px 0;
+}
+
+.card-info-details-container img {
+  margin: 0 12px;
+}
+
+.card-info-role,
+.card-info-date {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--light-grey-color);
+}
+
+.card-info-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--font-heavey-pruple-color);
+}
+
+.card-info-tags-container {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 12px 0;
+}
+
+.card-info-tag {
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 5px;
+  color: var(--main-purple-color);
+  background-color: var(--very-light-puple-color);
+}
+
+.card-info-link-container button {
+  border: 1px solid var(--main-purple-color);
+  border-radius: 8px;
+  padding: 12px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/* About myself */
+#about-myself-container {
+  /* border:1px solid orange; */
+  border-radius: 0 100px 0 0;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 114px 24px 12px 24px;
+}
+
+.skillset-container {
+  /* border:1px solid green; */
+  list-style: none;
+  margin: 48px auto;
+}
+
+.skill-container {
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.skill-title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.languages-container {
+  list-style: none;
+}
+
+.language-container {
+  /* border:1px solid orange; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 12px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+}
+
+.language-container img {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  margin-left: 12px;
+}
+
+.language-name {
+  margin-left: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.right-arrow-icon {
+  transform: rotate(-90deg);
+}
+
+hr {
+  border: 1px solid #dfe1e6;
+  margin: 10px 0;
+}
+
+/* Pseduo Classes btns */
+.card-info-link-container button:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.card-info-link-container button:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
 /* Desktop screen */
 @media (min-width: 768px) {
-  .toolbar-container {
-    /* border:2px solid orange; */
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
   .toolbar-content-container {
     /* border:2px solid green; */
     width: 80%;
