@@ -93,8 +93,8 @@ You can deploy this project using [Netlify](https://www.netlify.com/)
 
 👤 **Amin Alizadeh**
 
-- GitHub: [Github](https://github.com/M-AminAlizadeh)
-- Twitter: [Twitter](https://twitter.com/AMINALI69393891)
+- GitHub: [@M-AminAlizadeh](https://github.com/M-AminAlizadeh)
+- Twitter: [@AMINALI69393891](https://twitter.com/AMINALI69393891)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/m-amin-alizadeh-60a20b1b0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
