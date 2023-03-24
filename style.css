@@ -257,6 +257,19 @@ hr{
   margin:10px 0px;
 }
 
+/* Pseduo Classes btns*/
+.card-info-link-container button:hover{
+  color: #FFFFFF;
+  background-color: #6070FF;
+  
+}
+
+.card-info-link-container button:active{
+  color:#FFFFFF;
+  background-color: #2230D2;
+
+}
+
 /* Desktop screen */
 @media (min-width: 768px) {
   .toolbar-container {
