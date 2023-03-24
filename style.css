@@ -90,7 +90,8 @@
 .works-container{
   display: grid;
   grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 88px;
   margin:114px 24px;
 }
 
@@ -113,12 +114,17 @@
 }
 
 .card-info-title{
+  width:60%;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
   color: var(--font-heavey-pruple-color);
+}
+
+.card-info-details-container{
+  margin: 12px 0px;
 }
 
 .card-info-client-name{
@@ -157,6 +163,7 @@
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  margin:12px 0px;
 }
 
 .card-info-tag{
@@ -169,8 +176,6 @@
   margin-right: 5px;
   color:var(--main-purple-color);
   background-color: var(--very-light-puple-color);
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 
 .card-info-link-container button{
