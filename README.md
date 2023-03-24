@@ -21,8 +21,9 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 [Portfolio] <a name="about-project"></a>
-This is my Portfolio repository
+# 📖 Microverse-portfolio-project <a name="about-project"></a>
+This repository is about learning how to build a portfolio with Html/CSS 
+and using Layouts like Grid and Flexbox for position the elements and Turning figma design to a webpage.
 
 
 
@@ -37,8 +38,9 @@ This is my Portfolio repository
 
 ### Key Features <a name="key-features"></a>
 
-- **[Using linters]**
+- **Using linters**
 - **Mobile First and Responsive**
+- **Layout with Flexbox & Grid**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -46,7 +48,7 @@ This is my Portfolio repository
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://frabjous-melomakarona-10efb2.netlify.app)
+- [Live Demo](https://coruscating-maamoul-2ff2cb.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,26 +60,29 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your local machine
+Install [Node Js](https://nodejs.org/en) and [NPM](https://docs.npmjs.com/cli/v6/commands/npm-install) and [Git](https://git-scm.com/downloads) on your local computer.
 
 
 ### Install
-
-<!-- Install this project with: -->
+Open your commandline (if your are on windows ) or Terminal (if you are on Mac or Linux) and paste this command:
+```sh
+git clone https://github.com/M-AminAlizadeh/Microverse-portfolio-project.git
+```
+then you will see the **Microverse-portfolio-project** on your system then type this:
+```sh
+cd Microverse-portfolio-project
+```
+Now you successfully installed it.
 
 ### Usage
-
-<!-- To run the project, execute the following command: -->
-
-
+Inside **Microverse-portfolio-project** you can see ``index.html`` file double click it 
+to open it inside your browser.
 
 ### Run tests
-
 <!-- To run tests, run the following command: -->
 
 ### Deployment
-
-<!-- You can deploy this project using: -->
+You can deploy this project using [Netlify](https://www.netlify.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,11 +101,13 @@ Clone this repository to your local machine
 
 <!-- FUTURE FEATURES -->
 
-<!-- ## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]** -->
+- **Adding more section to works section**
+- **Adding Contact form**
+- **Adding Backend and Database**
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -108,14 +115,14 @@ Clone this repository to your local machine
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/M-AminAlizadeh/Hello-world/issues).
+Feel free to check the [issues page](https://github.com/M-AminAlizadeh/Microverse-portfolio-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-If you like this project don't forget to star it.
+If you like this project don't forget to leave a ``start``.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
