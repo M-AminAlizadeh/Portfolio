@@ -14,13 +14,26 @@
   --very-light-puple-color: #ebebff;
 }
 
+body {
+  background-color: #e5e5e5;
+  position: relative;
+  z-index: -1;
+}
+
 /* Toolbar */
+.toolbar-container {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .toolbar-content-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 44px auto;
+  margin: 40px auto;
 }
 
 .toolbar-brandname {
@@ -42,8 +55,11 @@
 .headline-container {
   /* border: 1px solid red; */
   background-image: url(images/header-shapes\ mobile@2x.svg);
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
   padding: 114px 24px 12px 24px;
+  margin-top: 108px;
+  border-radius: 0 0 0 50px;
 }
 
 .headline-greeting {
@@ -270,13 +286,6 @@ hr {
 
 /* Desktop screen */
 @media (min-width: 768px) {
-  .toolbar-container {
-    /* border:2px solid orange; */
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
   .toolbar-content-container {
     /* border:2px solid green; */
     width: 80%;
