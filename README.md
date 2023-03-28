@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -21,11 +22,11 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
+
 # 📖 Microverse-portfolio-project <a name="about-project"></a>
-This repository is about learning how to build a portfolio with Html/CSS 
+
+This repository is about learning how to build a portfolio with Html/CSS
 and using Layouts like Grid and Flexbox for position the elements and Turning figma design to a webpage.
-
-
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,28 +63,34 @@ To get a local copy up and running, follow these steps.
 
 Install [Node Js](https://nodejs.org/en) and [NPM](https://docs.npmjs.com/cli/v6/commands/npm-install) and [Git](https://git-scm.com/downloads) on your local computer.
 
-
 ### Install
+
 Open your commandline (if your are on windows ) or Terminal (if you are on Mac or Linux) and paste this command:
+
 ```sh
 git clone https://github.com/M-AminAlizadeh/Microverse-portfolio-project.git
 ```
+
 then you will see the **Microverse-portfolio-project** on your system then type this:
+
 ```sh
 cd Microverse-portfolio-project
 ```
+
 Now you successfully installed it.
 
 ### Usage
-Inside **Microverse-portfolio-project** you can see ``index.html`` file double click it 
+
+Inside **Microverse-portfolio-project** you can see `index.html` file double click it
 to open it inside your browser.
 
 ### Run tests
+
 <!-- To run tests, run the following command: -->
 
 ### Deployment
-You can deploy this project using [Netlify](https://www.netlify.com/)
 
+You can deploy this project using [Netlify](https://www.netlify.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,6 +103,12 @@ You can deploy this project using [Netlify](https://www.netlify.com/)
 - GitHub: [@M-AminAlizadeh](https://github.com/M-AminAlizadeh)
 - Twitter: [@AMINALI69393891](https://twitter.com/AMINALI69393891)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/m-amin-alizadeh-60a20b1b0/)
+
+👤 **Abdul Wahab**
+
+- GitHub: [@githubhandle](https://github.com/Abdulwhbhussain)
+- Twitter: [@twitterhandle](https://twitter.com/AbdulWhbHussain)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulwhbhussain)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,13 +135,15 @@ Feel free to check the [issues page](https://github.com/M-AminAlizadeh/Microvers
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-If you like this project don't forget to leave a ``start``.
+
+If you like this project don't forget to leave a `start`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
 I would like to thanks Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
