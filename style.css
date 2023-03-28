@@ -296,7 +296,7 @@ hr {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #fff;
 }
@@ -306,7 +306,7 @@ hr {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: var(--very-light-puple-color);
   margin-top: 12px;
@@ -328,7 +328,7 @@ textarea {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   padding: 15px 16px;
   border-radius: 8px;
