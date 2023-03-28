@@ -284,6 +284,20 @@ hr {
   background-color: #2230d2;
 }
 
+.form-container {
+  border: 3px solid red;
+  background: var(--main-purple-color);
+  border-radius: 100px 0 0 0;
+  background-image: url(images/contact-form-shapes-mobile.svg);
+}
+
+.form-content-container {
+  border: 3px solid blue;
+  margin: 103px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Desktop screen */
 @media (min-width: 768px) {
   .toolbar-content-container {
