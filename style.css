@@ -273,17 +273,6 @@ hr {
   margin: 10px 0;
 }
 
-/* Pseduo Classes btns */
-.card-info-link-container button:hover {
-  color: #fff;
-  background-color: #6070ff;
-}
-
-.card-info-link-container button:active {
-  color: #fff;
-  background-color: #2230d2;
-}
-
 /* Form */
 .form-container {
   border: 1px solid transparent;
@@ -370,6 +359,19 @@ textarea {
   position: absolute;
   bottom: 8px;
   left: 120px;
+}
+
+/* Pseduo Classes btns */
+.card-info-link-container button:hover,
+#submit-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.card-info-link-container button:active,
+#submit-btn:active {
+  color: #fff;
+  background-color: #2230d2;
 }
 
 /* Desktop screen */
