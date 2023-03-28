@@ -284,8 +284,9 @@ hr {
   background-color: #2230d2;
 }
 
+/* Form */
 .form-container {
-  border: 3px solid red;
+  border: 1px solid transparent;
   background: var(--main-purple-color);
   border-radius: 100px 0 0 0;
   background-image: url(images/contact-form-shapes-mobile.svg);
@@ -294,10 +295,59 @@ hr {
 }
 
 .form-content-container {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   margin: 103px 24px;
   display: flex;
   flex-direction: column;
+}
+
+.form-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.form-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--very-light-puple-color);
+  margin-top: 12px;
+  margin-bottom: 52px;
+}
+
+form {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-element,
+textarea {
+  border: 1px solid #cfd8dc;
+  color: var(--font-heavey-pruple-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 15px 16px;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea {
+  font-size: 15px;
+  line-height: 24px;
 }
 
 /* Desktop screen */
