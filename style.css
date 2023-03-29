@@ -128,6 +128,10 @@ body {
   overflow: hidden;
 }
 
+.card-snapshoot-desktop {
+  display: none;
+}
+
 .card-info-title {
   width: 60%;
   font-size: 32px;
@@ -448,8 +452,28 @@ textarea {
 
   /* Works */
   .works-container {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     gap: 142px;
-    margin: 142px ; 
+    margin: 142px;
+  }
+
+  /* Card */
+  .card-container {
+    border: 1px solid purple;
+    flex-direction: row;
+    padding: 24px;
+    column-gap: 46px;
+  }
+
+  .card-preview-container img:first-child {
+    display: none;
+  }
+
+  .card-snapshoot-desktop {
+    display: block;
+  }
+
+  .card-info-container {
+    border: 1px solid green;
   }
 }
