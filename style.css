@@ -376,8 +376,9 @@ textarea {
 
 /* Desktop screen */
 @media (min-width: 768px) {
+  /* Toolbar */
   .toolbar-content-container {
-    /* border:2px solid green; */
+    /* border: 2px solid green; */
     width: 80%;
   }
 
@@ -403,18 +404,23 @@ textarea {
     color: var(--secondary-color);
   }
 
+  /* Headline */
   .headline-container {
-    /* border:2px solid red; */
+    /* border: 2px solid red; */
     background-image: url(images/Header\ bg.svg);
-    margin: 110px 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 100px 0px;
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 0 100px;
   }
 
   .headline-content-container {
-    /* border:2px solid green; */
+    /* border: 2px solid green; */
     width: 70%;
-    margin: auto;
+    margin: 200px auto;
   }
 
   .headline-greeting {
