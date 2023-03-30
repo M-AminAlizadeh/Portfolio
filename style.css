@@ -624,6 +624,17 @@ textarea {
     margin: auto;
   }
 
+  .form-description {
+    border: 1px solid orange;
+    width: 80%;
+    margin: auto;
+  }
+
+  form {
+    border: 1px solid blue;
+    width: 80%;
+    margin: auto;
+  }
   .submit-btn-container {
     /* border: 1px solid black; */
     display: flex;
