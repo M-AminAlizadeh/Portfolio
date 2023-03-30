@@ -443,7 +443,7 @@ textarea {
   /* Works */
   .works-container {
     gap: 142px;
-    margin: 142px;
+    margin: 114px 24px;
   }
 
   /* Card */
