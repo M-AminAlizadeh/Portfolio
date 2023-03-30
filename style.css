@@ -532,7 +532,7 @@ textarea {
   }
   /* About myself */
   #about-myself-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 0px 70px 0px 0px;
     display: flex;
     justify-content: center;
@@ -574,5 +574,29 @@ textarea {
   .skillset-container {
     /* border: 1px solid green; */
     flex: 3;
+  }
+
+  .skill-title {
+    color: #344563;
+  }
+
+  .languages-container {
+    /* border: 4px solid orange; */
+    display: flex;
+  }
+
+  .language-container {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 16px;
+    padding: 20px;
+    width: 122px;
+  }
+  .language-container img,
+  .language-container span {
+    margin: 0;
   }
 }
