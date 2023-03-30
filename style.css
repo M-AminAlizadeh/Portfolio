@@ -24,7 +24,8 @@ body {
   display: block;
 }
 
-.desktop {
+.desktop,
+.desktop-inline {
   display: none;
 }
 
@@ -145,6 +146,9 @@ body {
 
 .card-info-details-container {
   margin: 12px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .card-info-client-name {
