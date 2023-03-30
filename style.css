@@ -530,4 +530,49 @@ textarea {
   .card-info-tags-container {
     margin: 24px 0;
   }
+  /* About myself */
+  #about-myself-container {
+    border: 1px solid red;
+    border-radius: 0px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-myself-top-container {
+    /* border: 1px solid purple; */
+    flex: 2;
+  }
+
+  .aboutmyself-headline-title-desktop {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0em;
+  }
+  .aboutmyself-headline-text-desktop {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .aboutmyself-headline-connect-text-desktop {
+    font-size: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 26px;
+  }
+
+  .card-info-link-container {
+    /* border: 1px solid blue; */
+    margin-top: 34px;
+  }
+
+  .skillset-container {
+    /* border: 1px solid green; */
+    flex: 3;
+  }
 }
