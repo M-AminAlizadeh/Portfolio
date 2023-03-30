@@ -596,16 +596,17 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid green;
   }
 
   .form-content-container {
-    width: 50%;
+    width: 70%;
     margin: auto;
   }
 
   .form-description {
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 30px auto;
   }
 
   form {
@@ -620,6 +621,6 @@ textarea {
   }
 
   #submit-btn {
-    width: 30%;
+    width: 40%;
   }
 }
