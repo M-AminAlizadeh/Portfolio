@@ -128,7 +128,7 @@ body {
   overflow: hidden;
 }
 
-.card-snapshoot-desktop {
+.desktop {
   display: none;
 }
 
@@ -465,11 +465,35 @@ textarea {
     column-gap: 46px;
   }
 
-  .card-preview-container img:first-child {
+  .mobile {
     display: none;
   }
 
-  .card-snapshoot-desktop {
+  .card-preview-container img {
+    /* border: 1px solid brown; */
+    width: 100%;
+  }
+
+  .card-container:nth-child(even) {
+    border: 1px solid #dfe1e6;
+    justify-content: space-around;
+  }
+
+  .card-container:nth-child(even) .card-preview-container {
+    order: 2;
+  }
+
+  .card-info-container,
+  .card-preview-container {
+    flex: 1;
+    /* border: 1px solid orange; */
+  }
+
+  .desktop-inline {
+    display: inline;
+  }
+
+  .desktop {
     display: block;
   }
 
@@ -481,6 +505,7 @@ textarea {
   .card-info-title {
     font-size: 40px;
     line-height: 52px;
+    width: 100%;
   }
 
   .card-info-client-name {
@@ -498,7 +523,7 @@ textarea {
 
   .card-info-description {
     /* border: 1px solid green; */
-    width: 80%;
+    width: 90%;
     font-size: 16px;
   }
 
