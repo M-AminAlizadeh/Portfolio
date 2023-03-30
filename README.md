@@ -104,20 +104,14 @@ You can deploy this project using [Netlify](https://www.netlify.com/)
 - Twitter: [@AMINALI69393891](https://twitter.com/AMINALI69393891)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/m-amin-alizadeh-60a20b1b0/)
 
-👤 **Abdul Wahab**
-
-- GitHub: [@githubhandle](https://github.com/Abdulwhbhussain)
-- Twitter: [@twitterhandle](https://twitter.com/AbdulWhbHussain)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulwhbhussain)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Adding more section to works section**
-- **Adding Contact form**
+- **Adding pop-up page for each project with all information about the project**
+- **Adding more personal project**
 - **Adding Backend and Database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
