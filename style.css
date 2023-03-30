@@ -599,4 +599,39 @@ textarea {
   .language-container span {
     margin: 0;
   }
+
+  /* Form */
+  .form-container {
+    padding: 79px 74px 48px 75px;
+    background-image: none;
+  }
+
+  .form-bg-container {
+    /* border: 1px solid green; */
+    background-image: url(images/contact\ form\ background\ shapes\ desktop.png);
+    background-size: cover; /*maybe cover*/
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-content-container {
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+  }
+
+  .submit-btn-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #submit-btn {
+    width: 30%;
+  }
 }
