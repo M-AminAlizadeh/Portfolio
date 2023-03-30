@@ -53,7 +53,6 @@ body {
 
 /* Headline */
 .headline-container {
-  /* border: 1px solid red; */
   background-image: url(images/header-shapes\ mobile@2x.svg);
   background-color: #fff;
   font-family: "Poppins", sans-serif;
@@ -63,7 +62,6 @@ body {
 }
 
 .headline-greeting {
-  /* border: 1px solid green; */
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -74,7 +72,6 @@ body {
 }
 
 .headline-text {
-  /* border: 2px solid orange; */
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
@@ -83,7 +80,6 @@ body {
 }
 
 .headline-connect-text {
-  /* border:1px solid red; */
   color: #7f8cff;
   font-weight: 500;
   line-height: 24px;
@@ -211,7 +207,6 @@ body {
 
 /* About myself */
 #about-myself-container {
-  /* border:1px solid orange; */
   border-radius: 0 100px 0 0;
   background-color: #fff;
   font-family: "Poppins", sans-serif;
@@ -219,13 +214,11 @@ body {
 }
 
 .skillset-container {
-  /* border:1px solid green; */
   list-style: none;
   margin: 48px auto;
 }
 
 .skill-container {
-  /* border:1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -245,7 +238,6 @@ body {
 }
 
 .language-container {
-  /* border:1px solid orange; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -289,7 +281,6 @@ hr {
 }
 
 .form-content-container {
-  /* border: 3px solid blue; */
   margin: 103px 24px;
   display: flex;
   flex-direction: column;
@@ -318,7 +309,6 @@ hr {
 }
 
 form {
-  /* border: 1px solid orange; */
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -345,7 +335,6 @@ textarea {
 }
 
 #submit-btn {
-  /* border: 1px solid red; */
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-weight: 500;
@@ -382,7 +371,6 @@ textarea {
 @media (min-width: 768px) {
   /* Toolbar */
   .toolbar-content-container {
-    /* border: 2px solid green; */
     width: 80%;
   }
 
@@ -391,7 +379,6 @@ textarea {
   }
 
   .navbar-links-container {
-    /* border: 1px solid orange; */
     display: flex;
     list-style-type: none;
   }
@@ -410,7 +397,6 @@ textarea {
 
   /* Headline */
   .headline-container {
-    /* border: 2px solid red; */
     background-image: url(images/Header\ bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -422,7 +408,6 @@ textarea {
   }
 
   .headline-content-container {
-    /* border: 2px solid green; */
     width: 70%;
     margin: 200px auto;
   }
@@ -452,14 +437,12 @@ textarea {
 
   /* Works */
   .works-container {
-    /* border: 1px solid orange; */
     gap: 142px;
     margin: 142px;
   }
 
   /* Card */
   .card-container {
-    /* border: 1px solid purple; */
     flex-direction: row;
     padding: 24px;
     column-gap: 46px;
@@ -470,7 +453,6 @@ textarea {
   }
 
   .card-preview-container img {
-    /* border: 1px solid brown; */
     width: 100%;
   }
 
@@ -486,7 +468,6 @@ textarea {
   .card-info-container,
   .card-preview-container {
     flex: 1;
-    /* border: 1px solid orange; */
   }
 
   .desktop-inline {
@@ -498,7 +479,6 @@ textarea {
   }
 
   .card-info-container {
-    /* border: 1px solid green; */
     padding: 24px;
   }
 
@@ -522,7 +502,6 @@ textarea {
   }
 
   .card-info-description {
-    /* border: 1px solid green; */
     width: 90%;
     font-size: 16px;
   }
@@ -532,7 +511,6 @@ textarea {
   }
   /* About myself */
   #about-myself-container {
-    /* border: 1px solid red; */
     border-radius: 0px 70px 0px 0px;
     display: flex;
     justify-content: center;
@@ -540,7 +518,6 @@ textarea {
   }
 
   .about-myself-top-container {
-    /* border: 1px solid purple; */
     flex: 2;
   }
 
@@ -567,12 +544,10 @@ textarea {
   }
 
   .card-info-link-container {
-    /* border: 1px solid blue; */
     margin-top: 34px;
   }
 
   .skillset-container {
-    /* border: 1px solid green; */
     flex: 3;
   }
 
@@ -581,12 +556,10 @@ textarea {
   }
 
   .languages-container {
-    /* border: 4px solid orange; */
     display: flex;
   }
 
   .language-container {
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -607,7 +580,6 @@ textarea {
   }
 
   .form-bg-container {
-    /* border: 1px solid green; */
     background-image: url(images/contact\ form\ background\ shapes\ desktop.png);
     background-size: cover; /*maybe cover*/
     background-repeat: no-repeat;
@@ -619,24 +591,20 @@ textarea {
   }
 
   .form-content-container {
-    /* border: 1px solid red; */
     width: 50%;
     margin: auto;
   }
 
   .form-description {
-    border: 1px solid orange;
     width: 80%;
     margin: auto;
   }
 
   form {
-    border: 1px solid blue;
     width: 80%;
     margin: auto;
   }
   .submit-btn-container {
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
