@@ -630,8 +630,12 @@ textarea {
   }
 
   .form-description {
+    transition: transform 2s ease-in-out;
     width: 90%;
     margin: 30px auto;
+  }
+  .form-description:hover{
+    transform: translate(100px);
   }
 
   form {
