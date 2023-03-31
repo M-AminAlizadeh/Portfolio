@@ -55,7 +55,9 @@ body {
   text-align: center;
   color: var(--main-purple-color);
 }
-
+.toolbar-brandname-container:hover {
+  transform: scale(1.2);
+}
 .navbar-links-container {
   display: none;
 }
