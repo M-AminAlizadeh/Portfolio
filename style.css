@@ -479,6 +479,12 @@ textarea {
 
   .card-preview-container img {
     width: 100%;
+    transition: all ease-in 0.3;
+  }
+
+  .card-preview-container img:hover {
+    transform: scale(1.03);
+    transition: all ease-in 0.3;
   }
 
   .card-container:nth-child(even) {
