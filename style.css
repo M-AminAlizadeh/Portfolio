@@ -212,6 +212,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition: linear 0.3s;
 }
 
 /* About myself */
@@ -355,6 +356,7 @@ textarea {
   padding: 12px 16px;
   width: 50%;
   border: none;
+  transition: linear 0.3s;
 }
 
 .black-line-container {
@@ -364,8 +366,7 @@ textarea {
 }
 
 /* Pseduo Classes btns */
-.card-info-link-container button:hover,
-#submit-btn:hover {
+.card-info-link-container button:hover {
   color: #fff;
   background-color: #6070ff;
 }
@@ -374,6 +375,12 @@ textarea {
 #submit-btn:active {
   color: #fff;
   background-color: #2230d2;
+}
+
+#submit-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+  border: 2px solid #fff;
 }
 
 /* Desktop screen */
