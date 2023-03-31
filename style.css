@@ -55,9 +55,11 @@ body {
   text-align: center;
   color: var(--main-purple-color);
 }
+
 .toolbar-brandname-container:hover {
   transform: scale(1.2);
 }
+
 .navbar-links-container {
   display: none;
 }
@@ -484,6 +486,11 @@ textarea {
     transition: all ease-in 0.3;
   }
 
+  .language-container img,
+  .language-container span {
+    margin: 0;
+  }
+
   .card-preview-container img:hover {
     transform: scale(1.03);
     transition: all ease-in 0.3;
@@ -604,10 +611,6 @@ textarea {
     width: 122px;
   }
 
-  .language-container img,
-  .language-container span {
-    margin: 0;
-  }
 
   /* Form */
   .form-container {
@@ -636,7 +639,8 @@ textarea {
     width: 90%;
     margin: 30px auto;
   }
-  .form-description:hover{
+
+  .form-description:hover {
     transform: translate(100px);
   }
 
