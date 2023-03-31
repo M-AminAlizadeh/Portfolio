@@ -60,6 +60,15 @@ body {
   display: none;
 }
 
+.navbar-links-container li a {
+  transition: ease-in-out 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links-container li a:hover {
+  border-bottom: 2px solid var(--main-purple-color);
+}
+
 /* Headline */
 .headline-container {
   background-image: url(images/header-shapes\ mobile@2x.svg);
