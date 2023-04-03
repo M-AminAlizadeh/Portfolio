@@ -49,7 +49,8 @@ and using Layouts like Grid and Flexbox for position the elements and Turning fi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://coruscating-maamoul-2ff2cb.netlify.app/)
+- [Live Demo on Netlify](https://coruscating-maamoul-2ff2cb.netlify.app/)
+- [Live Demo on Github pages](https://m-aminalizadeh.github.io/Microverse-portfolio-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +91,7 @@ to open it inside your browser.
 
 ### Deployment
 
-You can deploy this project using [Netlify](https://www.netlify.com/)
+You can deploy this project using [Netlify](https://www.netlify.com/) or [Github Pages](https://pages.github.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
