@@ -278,7 +278,7 @@ body {
 }
 
 /* About myself */
-#about-myself-container {
+.about-myself-container {
   border-radius: 0 100px 0 0;
   background-color: #fff;
   font-family: "Poppins", sans-serif;
@@ -599,7 +599,7 @@ textarea {
   }
 
   /* About myself */
-  #about-myself-container {
+  .about-myself-container {
     border-radius: 0 70px 0 0;
     display: flex;
     justify-content: center;
