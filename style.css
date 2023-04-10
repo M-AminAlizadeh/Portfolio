@@ -73,6 +73,7 @@ body {
   background-blend-mode: multiply;
   overflow: hidden;
 }
+
 /* Menu icon css  */
 .menu-icon-container {
   display: flex;
@@ -81,13 +82,14 @@ body {
   width: 90%;
   margin: auto;
 }
-.menu-line {
-  color: #000;
-  position: absolute;
-  bottom: 5px;
-}
 
-.mobile-menu-container {
+.mobile-menu-container ul {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 80%;
+  margin: auto;
   list-style: none;
 }
 
@@ -100,6 +102,12 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
+}
+
+.menu-line {
+  color: #000;
+  position: absolute;
+  bottom: 5px;
 }
 
 .navbar-links-container {
