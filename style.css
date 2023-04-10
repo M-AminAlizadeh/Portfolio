@@ -79,17 +79,22 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
+  margin-top: 62px;
+}
+
+.menu-icon-container img {
+  width: 12px;
 }
 
 .mobile-menu-container ul {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 80%;
   margin: auto;
+  margin-top: 30px;
   list-style: none;
 }
 
