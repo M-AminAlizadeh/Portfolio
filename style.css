@@ -73,7 +73,14 @@ body {
   background-blend-mode: multiply;
   overflow: hidden;
 }
-
+/* Menu icon css  */
+.menu-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
 .menu-line {
   color: #000;
   position: absolute;
