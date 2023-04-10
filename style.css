@@ -61,7 +61,6 @@ body {
 }
 
 .mobile-menu-container {
-  /* border: 1px solid red; */
   position: absolute;
   top: 0;
   left: 0;
@@ -74,7 +73,10 @@ body {
   overflow: hidden;
 }
 
-/* Menu icon css  */
+.mobile-menu-toggler {
+  display: none;
+}
+
 .menu-icon-container {
   display: flex;
   justify-content: flex-end;
