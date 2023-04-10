@@ -61,7 +61,7 @@ body {
 }
 
 .mobile-menu-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   top: 0;
   left: 0;
@@ -107,12 +107,6 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
-}
-
-.menu-line {
-  color: #000;
-  position: absolute;
-  bottom: 5px;
 }
 
 .navbar-links-container {
@@ -355,7 +349,6 @@ hr {
   background-image: url(images/contact-form-shapes-mobile.svg);
   background-position: right top;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .form-content-container {
