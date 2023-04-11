@@ -20,11 +20,34 @@
         </div>
         <!-- Toolbar Menu -->
         <nav class="toolbar-menu-container">
-          <img src="images/Icon - Menu.svg" alt="Menu icon" />
+          <a href="#">
+            <img src="images/Icon - Menu.svg" alt="Menu icon" id="menu-icon" />
+          </a>
+          <!-- mobile menu -->
+          <div class="mobile-menu-container mobile-menu-toggler">
+            <div class="menu-icon-container">
+              <a
+                ><img
+                  src="./images/mobile_exit_Icon.png"
+                  alt="exit icon"
+                  id="exit-menu-icon"
+              /></a>
+            </div>
+            <ul>
+              <li>
+                <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
+              </li>
+              <li><a href="#about-me" class="mobile-menu-link">About</a></li>
+              <li>
+                <a href="#contact-me" class="mobile-menu-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Desktop menu -->
           <ul class="navbar-links-container">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contact-me">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -82,7 +105,7 @@
       </div>
     </section>
     <!-- Works -->
-    <section class="works-container">
+    <section class="works-container" id="portfolio">
       <!-- Card -->
       <article class="card-container">
         <!-- Card preview image container-->
@@ -304,7 +327,7 @@
       </article>
     </section>
     <!-- About myself -->
-    <section id="about-myself-container">
+    <section class="about-myself-container" id="about-me">
       <!-- Top -->
       <article class="about-myself-top-container">
         <div class="headline-content-container">
@@ -411,7 +434,7 @@
       </ul>
     </section>
     <!-- Form -->
-    <section class="form-container">
+    <section class="form-container" id="contact-me">
       <div class="form-bg-container">
         <div class="form-content-container">
           <!-- Form header -->
@@ -462,5 +485,7 @@
         </div>
       </div>
     </section>
+    <!-- Script -->
+    <script src="./js/menu-popup.js"></script>
   </body>
 </html>
