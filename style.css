@@ -283,6 +283,51 @@ body {
   transition: linear 0.3s;
 }
 
+/* Mobile details popup */
+.mobile-details-popup-container {
+  /* border: 1px solid orange; */
+  background-color: #fff;
+  position: absolute;
+  width: 343px;
+  height: 750px;
+  top: -80px;
+  left: 20px;
+  border-radius: 16px;
+  padding: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mobile-details-first-row-container {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-details-snapshoot-container img {
+  margin-bottom: 12px;
+}
+
+.mobile-details-hr {
+  margin: 25px 0px;
+}
+
+.mobile-details-buttons-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.mobile-details-buttons-container button {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* About myself */
 .about-myself-container {
   border-radius: 0 100px 0 0;
