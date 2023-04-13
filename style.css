@@ -323,7 +323,7 @@ body {
 }
 
 .mobile-details-hr {
-  margin: 25px 0px;
+  margin: 25px 0;
 }
 
 .mobile-details-buttons-container {
@@ -608,6 +608,10 @@ textarea {
     margin: 0;
   }
 
+  .desktop-details-buttons-container button span {
+    font-size: 12px;
+  }
+
   .card-preview-container img:hover {
     transform: scale(1.03);
     transition: all ease-in 0.3;
@@ -666,6 +670,7 @@ textarea {
   .card-info-tags-container {
     margin: 24px 0;
   }
+
   /* Desktop details popup */
   .desktop-details-popup-bg-container {
     /* border: 1px solid red; */
@@ -680,7 +685,9 @@ textarea {
     font-family: 'Poppins', sans-serif;
     overflow: scroll;
     display: none;
+
     /* mix-blend-mode: multiply; */
+
     /* filter: blur(8px); */
   }
 
@@ -705,7 +712,7 @@ textarea {
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -741,13 +748,10 @@ textarea {
     justify-content: space-between;
   }
 
-  .desktop-details-buttons-container button span {
-    font-size: 12px;
-  }
-
   .desktop-details-buttons-container button img {
     width: 12px;
   }
+
   /* About myself */
   .about-myself-container {
     border-radius: 0 70px 0 0;
