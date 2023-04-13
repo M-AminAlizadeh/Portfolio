@@ -662,7 +662,88 @@ textarea {
   .card-info-tags-container {
     margin: 24px 0;
   }
+  /* Desktop details popup */
+  .desktop-details-popup-bg-container {
+    /* border: 1px solid red; */
+    background-color: #c1c7d0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 72px 144px;
+    z-index: 8;
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+    /* display: none; */
+    /* mix-blend-mode: multiply; */
+    /* filter: blur(8px); */
+  }
 
+  .desktop-details-popup-container {
+    /* border: 2px solid rgb(51, 255, 0); */
+    background-color: white;
+    position: absolute;
+    top: 72px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .desktop-details-first-row-container {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop-client-name {
+    /* border: 1px solid orange; */
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .desktop-details-popup-bottom-side-container {
+    /* border: 1px solid blue; */
+    display: flex;
+  }
+
+  .desktop-details-popup-description {
+    /* border: 3px solid rgb(0, 255, 255); */
+    font-size: 12px !important;
+    padding: 5px;
+    flex: 4;
+  }
+
+  .desktop-details-popup-right-side-container {
+    /* border: 1px solid orange; */
+    padding: 20px;
+    flex: 1;
+  }
+
+  .desktop-details-buttons-container {
+    /* border: 2px solid blue; */
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .desktop-details-buttons-container button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-details-buttons-container button span {
+    font-size: 12px;
+  }
+
+  .desktop-details-buttons-container button img {
+    width: 12px;
+  }
   /* About myself */
   .about-myself-container {
     border-radius: 0 70px 0 0;
