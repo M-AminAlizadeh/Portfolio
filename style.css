@@ -302,7 +302,7 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   width: 90%;
-  height: 750px;
+  height: 620px;
   margin: auto;
   border-radius: 16px;
   padding: 16px;
@@ -340,6 +340,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.desktop-details-popup-bg-container {
+  display: none;
 }
 
 /* About myself */
@@ -675,7 +679,7 @@ textarea {
     z-index: 8;
     font-family: 'Poppins', sans-serif;
     overflow: scroll;
-    /* display: none; */
+    display: none;
     /* mix-blend-mode: multiply; */
     /* filter: blur(8px); */
   }
