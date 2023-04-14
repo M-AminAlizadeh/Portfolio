@@ -16,5 +16,9 @@ window.addEventListener("load", function(){
 
 // Fetch data from UI to localstorage
 submitButton.addEventListener("submit",function(){
+  userData.fullName = nameInput.value;
+  userData.email = emailInput.value;
+  userData.message = messageInput.value;
+  localStorage.setItem("userData",JSON.stringify(userData))
 
 })
