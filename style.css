@@ -686,15 +686,16 @@ textarea {
     top: 0;
     padding: 72px 144px;
     z-index: 8;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: none;
   }
 
   .desktop-details-popup-container {
     /* border: 2px solid rgb(51, 255, 0); */
     background-color: white;
-    position: absolute;
-    width: 80%;
+    position: relative;
+    width: 75%;
     margin: auto;
     border-radius: 16px;
   }
