@@ -146,6 +146,18 @@ if(window.innerWidth <= 375){
       // show popup
       desktopDetailsPopupBgContainer.style.display = 'block';
       // write from here
+// replace each card info
+desktopProjectData.map((card)=>{
+  if(index === card.id){
+    desktopTitle.innerHTML = card.title;
+    desktopSnapshoot.src = card.snapshootUrl;
+    desktopClientName.innerHTML = card.clientName;
+    desktopRole.innerHTML = card.role;
+    desktopYear.innerHTML = card.year;
+    desktopDescription.innerHTML = card.description;
+  }
+})
+
     });
   });
 }
