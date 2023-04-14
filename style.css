@@ -411,6 +411,25 @@ textarea {
   line-height: 24px;
 }
 
+.error-message-container {
+  /* border: 1px solid green; */
+  background-color: #fff;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 16px;
+  padding: 5px;
+  display: none;
+}
+
+.error-message-container img {
+  margin: auto 10px;
+}
+
+.error-message {
+  font-family: monospace;
+  color: red;
+}
+
 #submit-btn {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
