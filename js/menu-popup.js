@@ -1,17 +1,17 @@
-const menuButton = document.querySelector('#menu-icon');
-const exitMenuButton = document.querySelector('#exit-menu-icon');
-const menuLinks = document.querySelectorAll('.mobile-menu-link');
-const menuBtns = [menuButton, exitMenuButton];
-const menuContainer = document.querySelector('.mobile-menu-container');
-const wholePage = document.querySelector('html');
+const menuButton = document.querySelector('.navbar__menu-icon');
+const exitButton = document.querySelector('.mobile-navbar__exit-icon');
+const mobileMenuPopup = document.querySelector('.mobile-navbar');
+const mobileMenuLinks = document.querySelectorAll('.mobile-navbar__link');
+const elements = [menuButton, exitButton];
 
-menuBtns.map((menuBtn) => menuBtn.addEventListener('click', () => {
-  menuContainer.classList.toggle('mobile-menu-toggler');
-  wholePage.classList.toggle('overflow-none');
-}));
+elements.forEach((element)=> {
+  element.addEventListener("click", (e) => {
+    mobileMenuPopup.classList.toggle('mobile-navbar__toggler');
+  })
+});
 
-menuLinks.forEach((menuLink) => {
-  menuLink.addEventListener('click', () => {
-    menuContainer.classList.toggle('mobile-menu-toggler');
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    mobileMenuPopup.classList.toggle('mobile-navbar__toggler');
   });
 });

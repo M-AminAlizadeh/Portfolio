@@ -3,66 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
     <link
       rel="shortcut icon"
-      href="https://avatars.githubusercontent.com/u/22550229?s=280&v=4"
-      type="image/x-icon" />
-    <title>Amin's Portfolio</title>
+      href="https://img.icons8.com/color/48/code.png"
+    />
+    <title>Amin Alizadeh Portfolio</title>
   </head>
   <body>
-    <!-- Toolbar -->
-    <header class="toolbar-container">
-      <div class="toolbar-content-container">
-        <!-- Toolbar Brand name -->
-        <div class="toolbar-brandname-container">
-          <a class="toolbar-brandname" href="#">My Logo</a>
+    <header class="header">
+      <a class="logo" href="#">
+        <img src="./assets/icons/amin-alizadeh-logo.png" alt="Personal Logo" class="logo__icon" />
+      </a>
+
+      <nav class="navbar">
+        <a href="#projects" class="navbar__link">Projects</a>
+        <a href="#about-me" class="navbar__link">About me</a>
+        <a href="#contact-me" class="navbar__link">Contact me</a>
+        <img src="https://img.icons8.com/ios-filled/50/6070ff/menu--v6.png" alt="Menu icon" class="navbar__menu-icon"/>
+
+      </nav>
+
+      <nav class="mobile-navbar">
+        <div class="mobile-navbar__exit-icon-container">
+          <img
+            src="https://img.icons8.com/ios/50/ffffff/close-window--v1.png"
+            alt="Exit icon"
+            class="mobile-navbar__exit-icon"
+          />
         </div>
-        <!-- Toolbar Menu -->
-        <nav class="toolbar-menu-container">
-          <a href="#">
-            <img src="images/Icon - Menu.svg" alt="Menu icon" id="menu-icon" />
-          </a>
-          <!-- mobile menu -->
-          <div class="mobile-menu-container mobile-menu-toggler">
-            <div class="menu-icon-container">
-              <a
-                ><img
-                  src="./images/mobile_exit_Icon.png"
-                  alt="exit icon"
-                  id="exit-menu-icon"
-              /></a>
-            </div>
-            <ul>
-              <li>
-                <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
-              </li>
-              <li><a href="#about-me" class="mobile-menu-link">About</a></li>
-              <li>
-                <a href="#contact-me" class="mobile-menu-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Desktop menu -->
-          <ul class="navbar-links-container">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#contact-me">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+        <a href="#projects" class="mobile-navbar__link">Portfolio</a>
+        <a href="#about-me" class="mobile-navbar__link">About</a>
+        <a href="#contact-me" class="mobile-navbar__link">Contact</a>
+      </nav>
+      
     </header>
-    <!-- Headline -->
-    <section class="headline-container">
+    
+    <!-- <section class="headline-container">
       <div class="headline-content-container">
-        <!-- Headline Greeting -->
         <div class="headline-greeting-container">
           <h1 class="headline-greeting">
             I’m Amin.<br />
             Glad to see you!
           </h1>
         </div>
-        <!-- Headline Text -->
         <div class="headline-text-container">
           <p class="headline-text">
             I’m a software developer! I can help you build a product , feature
@@ -71,7 +55,6 @@
             contact me.
           </p>
         </div>
-        <!-- Headline Social media -->
         <div class="headline-socialmedia-container">
           <p class="headline-connect-text">LET’S CONNECT</p>
           <ul class="headline-socialmedia-icons-container">
@@ -104,11 +87,9 @@
         </div>
       </div>
     </section>
-    <!-- Works -->
+
     <section class="works-container" id="portfolio">
-      <!-- Card -->
       <article class="card-container">
-        <!-- Card preview image container-->
         <div class="card-preview-container">
           <img
             class="mobile"
@@ -119,44 +100,34 @@
             alt="Tonic sanpshoot"
             class="card-snapshoot-desktop desktop" />
         </div>
-        <!-- Card info container -->
         <div class="card-info-container">
-          <!-- Card info title -->
           <div class="card-info-title-container">
             <h2 class="card-info-title">Tonic</h2>
           </div>
-          <!-- Card info details-->
           <div class="card-info-details-container">
-            <!-- Client name -->
             <span class="card-info-client-name">CANOPY</span>
             <img src="images/Counter.png" alt="counter icon" />
-            <!-- Role -->
             <span class="card-info-role"> Back End Dev </span>
             <img src="images/Counter.png" alt="counter icon" />
-            <!-- Date -->
             <span class="card-info-date"> 2015 </span>
           </div>
-          <!-- Card info description -->
           <div class="card-info-description-container">
             <p class="card-info-description">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
           </div>
-          <!-- Card info stacks -->
           <ul class="card-info-tags-container">
             <li class="card-info-tag">HTML</li>
             <li class="card-info-tag">CSS</li>
             <li class="card-info-tag">JavaScript</li>
           </ul>
-          <!-- Card info link -->
           <div class="card-info-link-container">
             <button>See project</button>
           </div>
         </div>
       </article>
       <article class="card-container">
-        <!-- Card preview image container-->
         <div class="card-preview-container">
           <img
             src="images/Snapshoot Portfolio2.png"
@@ -167,26 +138,19 @@
             alt="Multi-post strories sanpshoot"
             class="card-snapshoot-desktop desktop" />
         </div>
-        <!-- Card info container -->
         <div class="card-info-container">
-          <!-- Card info title -->
           <div class="card-info-title-container">
             <h2 class="card-info-title">Multi-Post Stories</h2>
           </div>
-          <!-- Card info details-->
           <div class="card-info-details-container">
-            <!-- Client name -->
             <span class="card-info-client-name mobile">CANOPY</span>
             <span class="card-info-client-name desktop-inline">FACEBOOK</span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Role -->
             <span class="card-info-role mobile"> Back End Dev </span>
             <span class="card-info-role desktop-inline"> Full Stack Dev </span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Date -->
             <span class="card-info-date"> 2015 </span>
           </div>
-          <!-- Card info description -->
           <div class="card-info-description-container">
             <p class="card-info-description mobile">
               A daily selection of privately personalized reads; no accounts or
@@ -198,21 +162,18 @@
               friends.
             </p>
           </div>
-          <!-- Card info stacks -->
           <ul class="card-info-tags-container">
             <li class="card-info-tag">HTML</li>
             <li class="card-info-tag desktop">Ruby on rails</li>
             <li class="card-info-tag">CSS</li>
             <li class="card-info-tag">JavaScript</li>
           </ul>
-          <!-- Card info link -->
           <div class="card-info-link-container">
             <button>See project</button>
           </div>
         </div>
       </article>
       <article class="card-container">
-        <!-- Card preview image container-->
         <div class="card-preview-container">
           <img
             src="images/Snapshoot Portfolio3.png"
@@ -223,27 +184,23 @@
             alt="Tonic sanpshoot"
             class="card-snapshoot-desktop desktop" />
         </div>
-        <!-- Card info container -->
         <div class="card-info-container">
-          <!-- Card info title -->
           <div class="card-info-title-container">
             <h2 class="card-info-title mobile">Tonic</h2>
             <h2 class="card-info-title desktop">Facebook 360</h2>
           </div>
-          <!-- Card info details-->
           <div class="card-info-details-container">
-            <!-- Client name -->
+            
             <span class="card-info-client-name mobile">CANOPY</span>
             <span class="card-info-client-name desktop-inline">FACEBOOK</span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Role -->
+            
             <span class="card-info-role mobile"> Back End Dev </span>
             <span class="card-info-role desktop-inline">Full Stack Dev</span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Date -->
+            
             <span class="card-info-date"> 2015 </span>
           </div>
-          <!-- Card info description -->
           <div class="card-info-description-container">
             <p class="card-info-description mobile">
               A daily selection of privately personalized reads; no accounts or
@@ -255,21 +212,18 @@
               VR.
             </p>
           </div>
-          <!-- Card info stacks -->
           <ul class="card-info-tags-container">
             <li class="card-info-tag">HTML</li>
             <li class="card-info-tag desktop">Ruby on rails</li>
             <li class="card-info-tag">CSS</li>
             <li class="card-info-tag">JavaScript</li>
           </ul>
-          <!-- Card info link -->
           <div class="card-info-link-container">
             <button>See project</button>
           </div>
         </div>
       </article>
       <article class="card-container">
-        <!-- Card preview image container-->
         <div class="card-preview-container">
           <img
             src="images/Snapshoot Portfolio4.png"
@@ -280,28 +234,21 @@
             alt="Tonic sanpshoot"
             class="card-snapshoot-desktop desktop" />
         </div>
-        <!-- Card info container -->
         <div class="card-info-container">
-          <!-- Card info title -->
           <div class="card-info-title-container">
             <h2 class="card-info-title mobile">Multi-Post Stories</h2>
             <h2 class="card-info-title desktop">Uber Navigation</h2>
           </div>
-          <!-- Card info details-->
           <div class="card-info-details-container">
-            <!-- Client name -->
             <span class="card-info-client-name mobile">CANOPY</span>
             <span class="card-info-client-name desktop-inline">Uber</span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Role -->
             <span class="card-info-role mobile"> Back End Dev </span>
             <span class="card-info-role desktop-inline"> Lead Developer </span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Date -->
             <span class="card-info-date mobile"> 2015 </span>
             <span class="card-info-date desktop-inline"> 2018 </span>
           </div>
-          <!-- Card info description -->
           <div class="card-info-description-container">
             <p class="card-info-description mobile">
               A daily selection of privately personalized reads; no accounts or
@@ -312,44 +259,35 @@
               unlocking your most expensive computer: your car.
             </p>
           </div>
-          <!-- Card info stacks -->
           <ul class="card-info-tags-container">
             <li class="card-info-tag">HTML</li>
             <li class="card-info-tag desktop">Ruby on rails</li>
             <li class="card-info-tag">CSS</li>
             <li class="card-info-tag">JavaScript</li>
           </ul>
-          <!-- Card info link -->
           <div class="card-info-link-container">
             <button>See project</button>
           </div>
         </div>
       </article>
     </section>
-    <!-- Mobile details popup -->
+
     <section class="mobile-details-popup-bg-container">
       <section class="mobile-details-popup-container">
-        <!-- Card info container -->
         <div class="card-info-container">
-          <!-- Card info title -->
           <div class="mobile-details-first-row-container">
             <h2 class="card-info-title">Tonic</h2>
             <img
               src="https://img.icons8.com/material-outlined/16/67798E/delete-sign.png"
               alt="exit icon" />
           </div>
-          <!-- Card info details-->
           <div class="card-info-details-container">
-            <!-- Client name -->
             <span class="card-info-client-name client-name">CANOPY</span>
             <img src="images/Counter.png" alt="counter icon" />
-            <!-- Role -->
             <span class="card-info-role my-role"> Back End Dev </span>
             <img src="images/Counter.png" alt="counter icon" />
-            <!-- Date -->
             <span class="card-info-date date-year"> 2015 </span>
           </div>
-          <!-- Card preview image container-->
           <div
             class="card-preview-container mobile-details-snapshoot-container">
             <img
@@ -357,7 +295,6 @@
               src="images/Snapshoot Portfolio1.png"
               alt="Tonic sanpshoot" />
           </div>
-          <!-- Card info description -->
           <div class="card-info-description-container">
             <p class="card-info-description popup-description">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -368,7 +305,6 @@
               electronic typesetting, remaining essent
             </p>
           </div>
-          <!-- Card info stacks -->
           <ul
             class="card-info-tags-container mobile-details-popup-tags-container">
             <li class="card-info-tag">HTML</li>
@@ -376,7 +312,6 @@
             <li class="card-info-tag">JavaScripts</li>
           </ul>
           <hr class="mobile-details-hr" />
-          <!-- Card info link -->
           <div
             class="card-info-link-container mobile-details-buttons-container">
             <button>
@@ -391,30 +326,23 @@
         </div>
       </section>
     </section>
-    <!-- Desktop details popup -->
+
     <section class="desktop-details-popup-bg-container">
       <section class="desktop-details-popup-container">
-        <!-- Card info container -->
         <div class="card-info-container">
-          <!-- Card info title -->
           <div class="desktop-details-first-row-container">
             <h2 class="card-info-title">Tonic</h2>
             <img
               src="https://img.icons8.com/material-outlined/16/67798E/delete-sign.png"
               alt="exit icon" />
           </div>
-          <!-- Card info details-->
           <div class="card-info-details-container">
-            <!-- Client name -->
             <span class="desktop-client-name desktop-client-name">CANOPY</span>
             <img src="images/Counter.png" alt="counter icon" />
-            <!-- Role -->
             <span class="desktop-role desktop-my-role"> Back End Dev </span>
             <img src="images/Counter.png" alt="counter icon" />
-            <!-- Date -->
             <span class="card-info-date desktop-date-year"> 2015 </span>
           </div>
-          <!-- Card preview image container-->
           <div
             class="card-preview-container desktop-details-snapshoot-container">
             <img
@@ -423,7 +351,6 @@
               class="card-snapshoot-desktop desktop" />
           </div>
           <div class="desktop-details-popup-bottom-side-container">
-            <!-- Card info description -->
             <div
               class="card-info-description-container desktop-details-popup-description">
               <p class="card-info-description desktop-popup-description">
@@ -441,7 +368,6 @@
               </p>
             </div>
             <div class="desktop-details-popup-right-side-container">
-              <!-- Card info stacks -->
               <ul
                 class="card-info-tags-container desktop-details-popup-tags-container">
                 <li class="card-info-tag">HTML</li>
@@ -449,7 +375,6 @@
                 <li class="card-info-tag">JavaScripts</li>
               </ul>
               <hr />
-              <!-- Card info link -->
               <div
                 class="card-info-link-container desktop-details-buttons-container">
                 <button>
@@ -466,18 +391,15 @@
         </div>
       </section>
     </section>
-    <!-- About myself -->
+
     <section class="about-myself-container" id="about-me">
-      <!-- Top -->
       <article class="about-myself-top-container">
         <div class="headline-content-container">
-          <!-- Top Greeting -->
           <div class="headline-greeting-container">
             <h2 class="headline-greeting aboutmyself-headline-title-desktop">
               About Myself
             </h2>
           </div>
-          <!-- Top Text -->
           <div class="headline-text-container">
             <p class="headline-text aboutmyself-headline-text-desktop">
               Hello I’m a software developer! I can help you build a product ,
@@ -486,7 +408,6 @@
               hesitate to contact me.
             </p>
           </div>
-          <!-- Top Social media -->
           <div class="headline-socialmedia-container">
             <p
               class="headline-connect-text aboutmyself-headline-connect-text-desktop">
@@ -521,13 +442,11 @@
               </li>
             </ul>
           </div>
-          <!-- Resume link -->
           <div class="card-info-link-container">
             <button>Get my resume</button>
           </div>
         </div>
       </article>
-      <!-- Skillset -->
       <ul class="skillset-container">
         <div class="skill-container">
           <span class="skill-title">Languages</span>
@@ -573,15 +492,13 @@
         <hr class="desktop" />
       </ul>
     </section>
-    <!-- Form -->
+
     <section class="form-container" id="contact-me">
       <div class="form-bg-container">
         <div class="form-content-container">
-          <!-- Form header -->
           <div class="form-header-container">
             <h2 class="form-header">Contact me</h2>
           </div>
-          <!-- Form description -->
           <div class="form-description-container">
             <p class="form-description">
               If you have an application you are interested in developing, a
@@ -589,9 +506,7 @@
               love to help with it!
             </p>
           </div>
-          <!-- Form itself -->
           <form action="https://formspree.io/f/mwkjrezy" method="post">
-            <!-- Name -->
             <input
               name="form_name"
               type="text"
@@ -600,7 +515,6 @@
               maxlength="30"
               id="form-full-name"
               required />
-            <!-- Email -->
             <input
               name="form_email"
               type="email"
@@ -608,7 +522,6 @@
               placeholder="Enter your email address"
               id="form-email"
               required />
-            <!-- Message -->
             <textarea
               name="form_message"
               cols="30"
@@ -628,17 +541,16 @@
               <button type="submit" id="submit-btn">Get in touch</button>
             </div>
           </form>
-          <!-- line -->
           <div class="black-line-container mobile">
             <img src="images/black-line.png" alt="black line" />
           </div>
         </div>
       </div>
-    </section>
-    <!-- Script -->
+    </section> -->
+
     <script src="./js/menu-popup.js"></script>
-    <script src="./js/preserve-data.js"></script>
-    <script src="./js/validate-contact-form.js"></script>
-    <script src="./js/details-popup.js"></script>
+    <!-- <script src="./js/preserve-data.js"></script> -->
+    <!-- <script src="./js/validate-contact-form.js"></script> -->
+    <!-- <script src="./js/details-popup.js"></script> -->
   </body>
 </html>
