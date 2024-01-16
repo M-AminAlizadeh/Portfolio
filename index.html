@@ -11,54 +11,42 @@
     <title>Amin Alizadeh Portfolio</title>
   </head>
   <body>
-    <header class="toolbar-container">
-      <div class="toolbar-content-container">
-        <div class="toolbar-brandname-container">
-          <a class="toolbar-brandname" href="#">
-            <img src="./assets/icons/logo.jpeg" alt="Personal Logo icon" class="t" />
-          </a>
+    <header class="header">
+      <a class="logo" href="#">
+        <img src="./assets/icons/amin-alizadeh-logo.png" alt="Personal Logo" class="logo__icon" />
+      </a>
+
+      <nav class="navbar">
+        <a href="#projects" class="navbar__link">Projects</a>
+        <a href="#about-me" class="navbar__link">About me</a>
+        <a href="#contact-me" class="navbar__link">Contact me</a>
+        <img src="https://img.icons8.com/ios-filled/50/6070ff/menu--v6.png" alt="Menu icon" class="navbar__menu-icon"/>
+
+      </nav>
+
+      <nav class="mobile-navbar">
+        <div class="mobile-navbar__exit-icon-container">
+          <img
+            src="https://img.icons8.com/ios/50/ffffff/close-window--v1.png"
+            alt="Exit icon"
+            class="mobile-navbar__exit-icon"
+          />
         </div>
-        <nav class="toolbar-menu-container">
-          <a href="#">
-            <img src="images/Icon - Menu.svg" alt="Menu icon" id="menu-icon" />
-          </a>
-          <div class="mobile-menu-container mobile-menu-toggler">
-            <div class="menu-icon-container">
-              <a
-                ><img
-                  src="./images/mobile_exit_Icon.png"
-                  alt="exit icon"
-                  id="exit-menu-icon"
-              /></a>
-            </div>
-            <ul>
-              <li>
-                <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
-              </li>
-              <li><a href="#about-me" class="mobile-menu-link">About</a></li>
-              <li>
-                <a href="#contact-me" class="mobile-menu-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <ul class="navbar-links-container">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#contact-me">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+        <a href="#projects" class="mobile-navbar__link">Portfolio</a>
+        <a href="#about-me" class="mobile-navbar__link">About</a>
+        <a href="#contact-me" class="mobile-navbar__link">Contact</a>
+      </nav>
+      
     </header>
-    <section class="headline-container">
+    
+    <!-- <section class="headline-container">
       <div class="headline-content-container">
-        <!-- Headline Greeting -->
         <div class="headline-greeting-container">
           <h1 class="headline-greeting">
             I’m Amin.<br />
             Glad to see you!
           </h1>
         </div>
-        <!-- Headline Text -->
         <div class="headline-text-container">
           <p class="headline-text">
             I’m a software developer! I can help you build a product , feature
@@ -67,7 +55,6 @@
             contact me.
           </p>
         </div>
-        <!-- Headline Social media -->
         <div class="headline-socialmedia-container">
           <p class="headline-connect-text">LET’S CONNECT</p>
           <ul class="headline-socialmedia-icons-container">
@@ -100,6 +87,7 @@
         </div>
       </div>
     </section>
+
     <section class="works-container" id="portfolio">
       <article class="card-container">
         <div class="card-preview-container">
@@ -202,15 +190,15 @@
             <h2 class="card-info-title desktop">Facebook 360</h2>
           </div>
           <div class="card-info-details-container">
-            <!-- Client name -->
+            
             <span class="card-info-client-name mobile">CANOPY</span>
             <span class="card-info-client-name desktop-inline">FACEBOOK</span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Role -->
+            
             <span class="card-info-role mobile"> Back End Dev </span>
             <span class="card-info-role desktop-inline">Full Stack Dev</span>
             <img src="images/Counter.png" alt="counter-icon" />
-            <!-- Date -->
+            
             <span class="card-info-date"> 2015 </span>
           </div>
           <div class="card-info-description-container">
@@ -283,6 +271,7 @@
         </div>
       </article>
     </section>
+
     <section class="mobile-details-popup-bg-container">
       <section class="mobile-details-popup-container">
         <div class="card-info-container">
@@ -337,6 +326,7 @@
         </div>
       </section>
     </section>
+
     <section class="desktop-details-popup-bg-container">
       <section class="desktop-details-popup-container">
         <div class="card-info-container">
@@ -401,6 +391,7 @@
         </div>
       </section>
     </section>
+
     <section class="about-myself-container" id="about-me">
       <article class="about-myself-top-container">
         <div class="headline-content-container">
@@ -501,6 +492,7 @@
         <hr class="desktop" />
       </ul>
     </section>
+
     <section class="form-container" id="contact-me">
       <div class="form-bg-container">
         <div class="form-content-container">
@@ -554,10 +546,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
     <script src="./js/menu-popup.js"></script>
-    <script src="./js/preserve-data.js"></script>
-    <script src="./js/validate-contact-form.js"></script>
-    <script src="./js/details-popup.js"></script>
+    <!-- <script src="./js/preserve-data.js"></script> -->
+    <!-- <script src="./js/validate-contact-form.js"></script> -->
+    <!-- <script src="./js/details-popup.js"></script> -->
   </body>
 </html>
