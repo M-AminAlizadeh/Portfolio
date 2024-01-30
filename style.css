@@ -193,6 +193,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 16px;
+  width: 80%;
+  margin: auto;
 }
 
 .card-preview-container {
