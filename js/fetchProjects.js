@@ -2,14 +2,16 @@ const portfolio = document.querySelector('#portfolio');
 
 const projects = async () => {
   const response = await fetch('../data.json');
-  const json = await response.json()
+  const json = await response.json();
   return json.projects;
 };
 
 projects().then((projectsList) => {
   projectsList.forEach((project) => {
-    const {name, companyName, role, year, tags, description, githubLink, 
-    previewLink, snapshootPath} = project;
+    const {
+      name, companyName, role, year, tags, description, githubLink,
+      previewLink, snapshootPath,
+    } = project;
     const tagsArray = tags.slice(1, -1).split(',');
     portfolio.innerHTML += `
       <article class="card-container" id=${name}>
@@ -47,6 +49,6 @@ projects().then((projectsList) => {
             </button>
           </div>
         </div>
-      </article>`;  
+      </article>`;
   });
-})
+});
