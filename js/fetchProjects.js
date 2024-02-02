@@ -17,7 +17,7 @@ projects().then((projectsList) => {
           <img
             src=${snapshootPath}
             alt=${name}
-            class="card-snapshoot-desktop desktop" />
+            class="card-snapshoot-desktop" />
         </div>
         <div class="card-info-container">
           <div class="card-info-title-container">

@@ -662,10 +662,6 @@ textarea {
     display: inline;
   }
 
-  .desktop {
-    display: block;
-  }
-
   .card-info-container {
     padding: 24px;
   }
@@ -877,5 +873,11 @@ textarea {
 
   #submit-btn {
     width: 40%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .card-preview-container {
+    display: none;
   }
 }
