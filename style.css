@@ -262,6 +262,7 @@ body {
 .card-info-tags-container {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 12px 0;
 }
@@ -273,7 +274,7 @@ body {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.03em;
-  margin-right: 5px;
+  margin: 5px;
   color: var(--main-purple-color);
   background-color: var(--very-light-puple-color);
 }
