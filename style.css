@@ -180,6 +180,11 @@ body {
 .headline-socialmedia-icons-container img {
   margin: 1px 20px 1px 0;
   width: 20px;
+  transition: .5s;
+}
+
+.headline-socialmedia-icons-container img:hover {
+  transform: scale(2);
 }
 
 /* Works */
