@@ -623,6 +623,7 @@ textarea {
   .card-preview-container img {
     width: 100%;
     transition: all ease-in 0.3;
+    height: 400px;
   }
 
   .language-container img,
@@ -717,7 +718,7 @@ textarea {
     /* border: 2px solid rgb(51, 255, 0); */
     background-color: white;
     position: relative;
-    width: 75%;
+    width: 50%;
     margin: auto;
     border-radius: 16px;
   }
