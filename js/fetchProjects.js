@@ -12,7 +12,7 @@ projects().then((projectsList) => {
     previewLink, snapshootPath} = project;
     const tagsArray = tags.slice(1, -1).split(',');
     portfolio.innerHTML += `
-      <article class="card-container">
+      <article class="card-container" id=${name}>
         <div class="card-preview-container">
           <img
             src=${snapshootPath}
@@ -36,13 +36,17 @@ projects().then((projectsList) => {
             </p>
           </div>
           <ul class="card-info-tags-container">
-            ${tagsArray.map((tag) =>  `<li class="card-info-tag">${tag}</li>`)}
+            ${tagsArray.map((tag) => `<li class="card-info-tag">${tag}</li>`)}
           </ul>
           <div class="card-info-link-container">
-            <button>See project</button>
+            <button>
+              <a href=${githubLink} target="_blank" class="link">GitHub</a>
+            </button>
+            <button>
+              <a href=${previewLink} target="_blank" class="link">Live Preview</a>
+            </button>
           </div>
         </div>
-      </article>
-          `;
-        });
-      })
+      </article>`;  
+  });
+})
