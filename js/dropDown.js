@@ -8,7 +8,7 @@ const togglers = [languagesToggler, frameworksToggler, skillsToggler];
 const containers = [languagesContainer, frameworksContainer, skillsContainer];
 
 const data = async () => {
-  const res = await fetch('../data.json');
+  const res = await fetch('/data.json');
   const json = await res.json();
   return json;
 };
