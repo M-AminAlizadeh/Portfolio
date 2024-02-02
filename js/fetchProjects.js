@@ -1,7 +1,7 @@
 const portfolio = document.querySelector('#portfolio');
 
 const projects = async () => {
-  const response = await fetch('../projects.json');
+  const response = await fetch('../data.json');
   const json = await response.json()
   return json.projects;
 };
