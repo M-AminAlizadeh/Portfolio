@@ -349,8 +349,13 @@ body {
   letter-spacing: 0;
 }
 
-.right-arrow-icon {
-  transform: rotate(-90deg);
+.languages-container,
+.frameworks-container,
+.skills-container {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 hr {
