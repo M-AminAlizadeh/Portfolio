@@ -1,0 +1,59 @@
+{
+  "projects": [
+    {
+      "name": "Countries App",
+      "companyName":"Microverse",
+      "role": "Frontend",
+      "year": "2023",
+      "tags": "['CSS3', 'React', 'Redux/toolkit']",
+      "description": "Countries App is a app about all the countires on the planet and you can search between them and find your country then you can click on each country you want and see more details about that country",
+      "githubLink": "https://github.com/M-AminAlizadeh/Countries-app",
+      "previewLink": "https://github.com/M-AminAlizadeh/Countries-app",
+      "snapshootPath": "./images/snapshoots/CountriesOfTheWorld.png"
+    },
+    {
+      "name": "Space Travellers",
+      "companyName":"Microverse",
+      "role": "Frontend",
+      "year": "2023",
+      "tags": "['CSS3', 'React', 'Redux/toolkit', 'Jest', 'React testing library']",
+      "description": "Space Travellers' Hub is a single-page application (SPA) built with React that uses real-time data from the SpaceX API. Users can book rockets and join selected space missions, and the selected services are displayed on the user's profile page",
+      "githubLink": "https://github.com/M-AminAlizadeh/space-travellers",
+      "previewLink": "https://github.com/M-AminAlizadeh/space-travellers",
+      "snapshootPath": "./images/snapshoots/SpaceTraverler'sHub.png"
+    },
+    {
+      "name": "Book store",
+      "companyName":"Microverse",
+      "role": "Frontend",
+      "year": "2023",
+      "tags": "['React', 'CSS3']",
+      "description": "Bookstore is a web-base app for adding your favorite books and store them in the browser's local-storage.",
+      "githubLink": "https://github.com/M-AminAlizadeh/Bookstore",
+      "previewLink": "https://github.com/M-AminAlizadeh/Bookstore",
+      "snapshootPath": "./images/snapshoots/bookstore.png"
+    },
+    {
+      "name": "Logseq Marketplace",
+      "companyName":"Logseq",
+      "role": "Frontend",
+      "year": "2023",
+      "tags": "['React', 'Tailwind']",
+      "description": "Logseq Marketplace is a web-base app for finding your favorite plugins and themes for your personal Logseq environment",
+      "githubLink": "https://github.com/M-AminAlizadeh/Logseq-marketplace",
+      "previewLink": "https://m-aminalizadeh.github.io/Logseq-marketplace/",
+      "snapshootPath": "./images/snapshoots/LogseqMarketplace.png"
+    },
+    {
+      "name": "Mathmagician",
+      "companyName":"Microverse",
+      "role": "Frontend",
+      "year": "2023",
+      "tags": "['React', 'CSS3']",
+      "description": "Mathmagician is a simple calculator and text generator using api",
+      "githubLink": "https://github.com/M-AminAlizadeh/Mathmagician",
+      "previewLink": "https://m-aminalizadeh.github.io/Mathmagician/",
+      "snapshootPath": "./images/snapshoots/Mathmagician.png"
+    }
+  ]
+}
