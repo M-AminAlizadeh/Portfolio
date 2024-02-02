@@ -14,6 +14,10 @@
   --very-light-puple-color: #ebebff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #e5e5e5;
   position: relative;
@@ -39,6 +43,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0 1px 5px var(--secondary-color);
+  z-index: 9;
 }
 
 .toolbar-content-container {
@@ -46,7 +52,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .toolbar-brandname {
@@ -90,10 +96,6 @@ body {
   margin-top: 62px;
 }
 
-.menu-icon-container img {
-  width: 12px;
-}
-
 .mobile-menu-container ul {
   display: flex;
   flex-direction: column;
@@ -130,13 +132,17 @@ body {
 
 /* Headline */
 .headline-container {
-  background-image: url(images/header-shapes\ mobile@2x.svg);
+  background-image: url(images/Header\ bg.svg);
   background-repeat: no-repeat;
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
-  padding: 114px 24px 12px 24px;
-  margin-top: 108px;
+  padding: 70px 40px;
   border-radius: 0 0 0 50px;
+  background-size: contain;
+  background-position: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .headline-greeting {
@@ -170,9 +176,28 @@ body {
   list-style: none;
 }
 
+.language-container img {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  margin-left: 12px;
+}
+
+.error-message-container img {
+  margin: auto 10px;
+}
+
 .headline-socialmedia-icons-container img {
   margin: 1px 20px 1px 0;
   width: 20px;
+  transition: 0.5s;
+}
+
+.card-info-details-container img {
+  margin: 0 12px;
+}
+
+.headline-socialmedia-icons-container img:hover {
+  transform: scale(2);
 }
 
 /* Works */
@@ -193,6 +218,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 16px;
+  width: 80%;
+  margin: auto;
 }
 
 .card-preview-container {
@@ -229,10 +256,6 @@ body {
   margin: 12px 0;
 }
 
-.card-info-details-container img {
-  margin: 0 12px;
-}
-
 .card-info-role,
 .card-info-date {
   font-size: 13px;
@@ -255,6 +278,7 @@ body {
 .card-info-tags-container {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 12px 0;
 }
@@ -266,7 +290,7 @@ body {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.03em;
-  margin-right: 5px;
+  margin: 5px;
   color: var(--main-purple-color);
   background-color: var(--very-light-puple-color);
 }
@@ -283,67 +307,8 @@ body {
   transition: linear 0.3s;
 }
 
-/* Mobile details popup */
-.mobile-details-popup-bg-container {
-  /* border: 3px solid green; */
-  background-color: #c1c7d0;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  display: none;
-  overflow: scroll;
-}
-
-.mobile-details-popup-container {
-  /* border: 1px solid orange; */
-  background-color: #fff;
-  font-family: 'Poppins', sans-serif;
-  position: relative;
-  width: 90%;
-  height: 620px;
-  margin: auto;
-  border-radius: 16px;
-  padding: 16px;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  z-index: 7;
-}
-
-.mobile-details-first-row-container {
-  /* border: 1px solid green; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile-details-snapshoot-container img {
-  margin-bottom: 12px;
-}
-
-.mobile-details-hr {
-  margin: 25px 0;
-}
-
-.mobile-details-buttons-container {
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 20px;
-}
-
-.mobile-details-buttons-container button {
-  flex: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.desktop-details-popup-bg-container {
-  display: none;
+.link {
+  text-decoration: none;
 }
 
 /* About myself */
@@ -387,12 +352,6 @@ body {
   border-radius: 8px;
 }
 
-.language-container img {
-  margin-top: 9px;
-  margin-bottom: 9px;
-  margin-left: 12px;
-}
-
 .language-name {
   margin-left: 16px;
   font-size: 15px;
@@ -401,8 +360,13 @@ body {
   letter-spacing: 0;
 }
 
-.right-arrow-icon {
-  transform: rotate(-90deg);
+.languages-container,
+.frameworks-container,
+.skills-container {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 hr {
@@ -484,10 +448,6 @@ textarea {
   display: none;
 }
 
-.error-message-container img {
-  margin: auto 10px;
-}
-
 .error-message {
   font-family: monospace;
   color: red;
@@ -566,7 +526,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin: 100px 0;
+    margin: 60px 0;
     display: flex;
     flex-direction: column;
     border-radius: 0 0 0 100px;
@@ -620,6 +580,7 @@ textarea {
   .card-preview-container img {
     width: 100%;
     transition: all ease-in 0.3;
+    height: 400px;
   }
 
   .language-container img,
@@ -656,10 +617,6 @@ textarea {
 
   .desktop-inline {
     display: inline;
-  }
-
-  .desktop {
-    display: block;
   }
 
   .card-info-container {
@@ -704,7 +661,7 @@ textarea {
     height: 100vh;
     top: 0;
     padding: 72px 144px;
-    z-index: 8;
+    z-index: 11;
     overflow-x: hidden;
     overflow-y: scroll;
     display: none;
@@ -714,7 +671,7 @@ textarea {
     /* border: 2px solid rgb(51, 255, 0); */
     background-color: white;
     position: relative;
-    width: 75%;
+    width: 50%;
     margin: auto;
     border-radius: 16px;
   }
@@ -873,5 +830,11 @@ textarea {
 
   #submit-btn {
     width: 40%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .card-preview-container {
+    display: none;
   }
 }
