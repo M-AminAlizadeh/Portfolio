@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
 import AboutMe from '../components/AboutMe'
@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 const HomePage = () => {
   return(
     <>
-      <Navbar />
+      <Header />
       <Intro />
       <Projects />
       <AboutMe />
