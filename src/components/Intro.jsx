@@ -1,7 +1,5 @@
-const Intro = () => {
-  return(
-    <div>Intro</div>
-  )
-}
+const Intro = () => (
+  <div>Intro</div>
+);
 
 export default Intro;
