@@ -1,5 +1,9 @@
+import Card from './Card';
+
 const Projects = () => (
-  <div>Projects section</div>
+  <div id="projects" className="border">
+    <Card />
+  </div>
 );
 
 export default Projects;
