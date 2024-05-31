@@ -7,7 +7,11 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'intro-bg-shapes': "url('./src/assets/images/background/Intro-bg-shapes.svg')",
+      }
+    },
   },
   plugins: [
     flowbite.plugin(),
