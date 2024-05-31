@@ -30,6 +30,9 @@
   ],
   "ignorePatterns": [
     "dist/",
-    "build/"
+    "build/",
+    "vite.config.js",
+    "tailwind.config.js",
+    "postcss.config.js"
   ]
 }
