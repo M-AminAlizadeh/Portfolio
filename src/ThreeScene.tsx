@@ -1,6 +1,6 @@
-import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import React from 'react'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
 
 const ThreeScene: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const ThreeScene: React.FC = () => {
       </mesh>
       <OrbitControls />
     </Canvas>
-  );
-};
+  )
+}
 
-export default ThreeScene;
+export default ThreeScene

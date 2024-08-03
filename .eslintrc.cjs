@@ -21,6 +21,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'quotes': ['error', 'single'],
+    'react/no-unknown-property': 'off',
   },
   settings: {
     react: {
