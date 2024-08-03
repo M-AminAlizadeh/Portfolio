@@ -4,28 +4,49 @@ import Blog from './pages/Blog'
 import Projects from './pages/Projects'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import App from './App'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: (
+      <App>
+        <Home />
+      </App>
+    ),
   },
   {
     path: '/blog',
-    element: <Blog />,
+    element: (
+      <App>
+        <Blog />
+      </App>
+    ),
   },
   {
     path: '/projects',
-    element: <Projects />,
+    element: (
+      <App>
+        <Projects />
+      </App>
+    ),
   },
   {
     path: '/about',
-    element: <About />,
+    element: (
+      <App>
+        <About />
+      </App>
+    ),
   },
   {
     path: '/contact',
-    element: <Contact />,
+    element: (
+      <App>
+        <Contact />
+      </App>
+    ),
   },
-])
+]);
 
-export default router
+export default router;
