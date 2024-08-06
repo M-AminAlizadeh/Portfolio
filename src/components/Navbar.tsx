@@ -11,8 +11,8 @@ function Navbar() {
           >
             <img
               src="https://img.icons8.com/stickers/100/source-code.png"
-              className="h-8"
-              alt="Flowbite Logo"
+              className="h-10"
+              alt="Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Amin Alizadeh
