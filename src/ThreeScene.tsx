@@ -51,7 +51,7 @@ const ThreeScene: React.FC = () => {
   }, [])
 
   return (
-    <div className="h-screen border-2 border-red-400">
+    <div className="h-screen">
       <Canvas camera={{ position: [10, 80, 50] }}>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
