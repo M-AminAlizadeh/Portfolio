@@ -1,10 +1,12 @@
+import Navbar from './components/Navbar'
 import ThreeScene from './ThreeScene'
 
-function App() {
+function App({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Navbar />
       <ThreeScene />
+      <main>{children}</main>
     </div>
   )
 }
