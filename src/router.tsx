@@ -47,6 +47,6 @@ const router = createBrowserRouter([
       </App>
     ),
   },
-]);
+])
 
-export default router;
+export default router
