@@ -1,11 +1,10 @@
-import Navbar from './components/Navbar'
-
-function App({ children }: { children: React.ReactNode }) {
+function App() {
   return (
-    <div>
-      <Navbar />
-      <main>{children}</main>
-    </div>
+    <>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+    </>
   )
 }
 
