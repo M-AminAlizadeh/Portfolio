@@ -23,7 +23,7 @@ export default new ESLint({
     globals: globals.browser,
     plugins: {
       'react-hooks': reactHooks,
-      'prettier': prettier,
+      prettier: prettier,
       '@typescript-eslint': tsPlugin,
     },
     rules: {
