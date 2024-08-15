@@ -8,7 +8,7 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
-  
+
   const [clickedLink, setClickedLink] = useState<string | null>(null);
 
   const handleClickedLink = (name: string) => {
@@ -20,9 +20,9 @@ const Navbar = () => {
       <ul className="flex flex-col gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
-            <Link 
-              to={item.path} 
-              onClick={() => handleClickedLink(item.name)} 
+            <Link
+              to={item.path}
+              onClick={() => handleClickedLink(item.name)}
               className={clickedLink === item.name ? 'underline' : ''}
             >
               {item.name}
