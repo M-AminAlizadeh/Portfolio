@@ -1,21 +1,20 @@
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+  ];
   return (
     <nav className="col-span-1 row-span-5">
       <ul className="flex flex-col gap-2">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
+        {navItems.map((item) => (
+          <li key={item.name}>
+            <Link to={item.path}>{item.name}</Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
