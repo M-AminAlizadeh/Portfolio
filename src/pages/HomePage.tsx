@@ -4,19 +4,16 @@ const HomePage = () => {
       <p>
         Born in 1999 in Urmia, Iran, I am Amin, a software engineer who believes
         in the power of well-designed architecture to tackle any problem through
-        software. 
+        software.
       </p>
       <p>
-        Before writing a single line of code, I always question the
-        problem it will solve. 
+        Before writing a single line of code, I always question the problem it
+        will solve.
       </p>
+      <p>I am driven to use my skills to create impactful solutions.</p>
       <p>
-        I am driven to use my skills to create impactful
-        solutions.
-      </p>
-      <p>
-        My best teacher is my experiences I believe without mistakes
-        there is no learning.
+        My best teacher is my experiences I believe without mistakes there is no
+        learning.
       </p>
     </div>
   );
