@@ -1,10 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
@@ -13,19 +10,19 @@ import ContactPage from './pages/ContactPage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Layout element={<HomePage />} />,
   },
   {
-    path: "projects",
+    path: 'projects',
     element: <Layout element={<ProjectsPage />} />,
   },
   {
-    path: "contact",
+    path: 'contact',
     element: <Layout element={<ContactPage />} />,
   },
   {
-    path: "about",
+    path: 'about',
     element: <Layout element={<AboutPage />} />,
   },
 ]);
