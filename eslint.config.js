@@ -21,11 +21,7 @@ export default new ESLint({
       sourceType: 'module',
     },
     globals: globals.browser,
-    plugins: {
-      'react-hooks': reactHooks,
-      prettier: prettier,
-      '@typescript-eslint': tsPlugin,
-    },
+    plugins: ['react-hooks', 'react-refresh', 'prettier', '@typescript-eslint'],
     rules: {
       'prettier/prettier': 'error',
     },
