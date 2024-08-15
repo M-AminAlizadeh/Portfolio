@@ -1,27 +1,30 @@
 import Header from "./Header"
+import {
+  Link,
+} from "react-router-dom";
 
-const Layout = () => {
+const Layout = ({element}: {element: React.ReactNode}) => {
   return (
     <div className="border-2 min-h-[90vh] m-10 p-10 grid grid-cols-5 grid-rows-6">
       <Header />
       <nav className="border-2 border-red-600 col-span-1 row-span-5">
         <ul className="flex flex-col gap-2">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
       <main className="border-2 border-blue-700 col-span-4 row-span-5">
-        {/* The content of the page will be rendered here */}
+        {element}
       </main>
     </div>
   )
