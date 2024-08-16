@@ -12,11 +12,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
+    <article className="h-[60vh] flex flex-col gap-10 overflow-y-scroll">
       {projectsData.map((project: object) => (
         <Project key={project.id} project={project} />
       ))}
-    </div>
+    </article>
   );
 };
 
