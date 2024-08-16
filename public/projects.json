@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Project 1",
+    "date": "2019-01-01",
+    "stacks": ["React", "Node.js", "MongoDB"]
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "date": "2019-01-02",
+    "stacks": ["React", "Node.js", "MongoDB"]
+  },
+  {
+    "id": 3,
+    "name": "Project 3",
+    "date": "2019-01-03",
+    "stacks": ["React", "Node.js", "MongoDB"]
+  }
+]
