@@ -28,7 +28,11 @@ const NavbarPopup = ({
       <ul className="flex flex-col justify-center items-center h-[70vh] gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
-            <Link to={item.path} onClick={handleClickedLink}>
+            <Link
+              to={item.path}
+              onClick={handleClickedLink}
+              className="text-2xl"
+            >
               {item.name}
             </Link>
           </li>
