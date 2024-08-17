@@ -19,7 +19,7 @@ const ContactForm = () => {
           id="name"
           name="name"
           type="text"
-          placeholder="Your name"
+          placeholder="Name"
           required
         />
       </div>
@@ -35,7 +35,7 @@ const ContactForm = () => {
           id="email"
           name="email"
           type="email"
-          placeholder="Your email"
+          placeholder="Email"
           required
         />
       </div>
@@ -50,11 +50,11 @@ const ContactForm = () => {
           className="shadow appearance-none border rounded min-h-36 max-h-60 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="message"
           name="message"
-          placeholder="Your message"
+          placeholder="Message"
           required
         />
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-center">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
