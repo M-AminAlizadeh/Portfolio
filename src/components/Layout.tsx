@@ -26,11 +26,11 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
   }, [isDarkMode]);
 
   return isOpen ? (
-    <NavbarPopup />
-  ) : (
+      <NavbarPopup {...{ setIsOpen, toggleMenu }} />
+    ) : (
     <div className="border dark:border-white border-black min-h-[90vh] m-2 sm:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
       <Header />
-      <NavbarMobile {...{ toggleMenu }} />
+      <NavbarMobile {...{ setIsOpen, toggleMenu }} />
       <Navbar />
       <Main element={element} />
       {/* <button onClick={handleDarkMode} className="border-2">
