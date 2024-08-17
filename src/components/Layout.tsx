@@ -2,12 +2,18 @@ import { useState, useEffect } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Navbar from './Navbar';
+import NavbarMobile from './NavbarMobile';
 
 const Layout = ({ element }: { element: React.ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   useEffect(() => {
@@ -21,11 +27,12 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
   return (
     <div className="border dark:border-white border-black min-h-[90vh] m-2 sm:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
       <Header />
+      <NavbarMobile {...{ isOpen, toggleMenu }} />
       <Navbar />
       <Main element={element} />
-      <button onClick={handleDarkMode} className="border-2">
+      {/* <button onClick={handleDarkMode} className="border-2">
         toggler dark/ligh mode
-      </button>
+      </button> */}
     </div>
   );
 };
