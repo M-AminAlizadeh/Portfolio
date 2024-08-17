@@ -19,7 +19,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
   }, [isDarkMode]);
 
   return (
-    <div className="border dark:border-white border-black min-h-[90vh] m-2 sm:m-10 p-4 sm:p-10 grid grid-cols-5 grid-rows-6">
+    <div className="border dark:border-white border-black min-h-[90vh] m-2 sm:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
       <Header />
       <Navbar />
       <Main element={element} />
