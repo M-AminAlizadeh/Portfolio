@@ -1,36 +1,37 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const NavbarPopup = () => {
+import { MouseEventHandler } from 'react';
+
+const NavbarPopup = ({ setIsOpen, toggleMenu }: { setIsOpen: Function, toggleMenu: MouseEventHandler<HTMLImageElement> }) => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
-  const [clickedLink, setClickedLink] = useState<string | null>(null);
-
-  const handleClickedLink = (name: string) => {
-    setClickedLink(clickedLink === name ? null : name);
-  };
+  const handleClickedLink = () => setIsOpen(false);
   return (
-    <div>
-      <ul className="flex flex-col gap-2">
+    <nav className="p-5">
+      <button
+        type="button"
+        className="border w-full flex justify-end"
+        >
+        <img
+          src="https://img.icons8.com/material-rounded/50/close-window.png"
+          alt="close-window"
+          onClick={toggleMenu}
+        />
+      </button>
+      <ul className="border flex flex-col justify-center items-center h-[70vh] gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
-            <Link
-              to={item.path}
-              onClick={() => handleClickedLink(item.name)}
-              className={`${
-                clickedLink === item.name ? 'underline' : ''
-              } 2xl:text-xl`}
-            >
+            <Link to={item.path} onClick={handleClickedLink}>
               {item.name}
             </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 
