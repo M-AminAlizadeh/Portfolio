@@ -1,6 +1,6 @@
 const NavbarMobile = ({ toggleMenu }: { toggleMenu: () => void }) => {
   return (
-    <div className="border col-span-1 row-span-1 flex justify-center items-center sm:hidden">
+    <div className="col-span-1 row-span-1 flex justify-center items-center sm:hidden">
       <button onClick={toggleMenu}>
         <img
           width="50"

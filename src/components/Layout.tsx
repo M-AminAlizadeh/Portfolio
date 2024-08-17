@@ -33,9 +33,11 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       <NavbarMobile {...{ setIsOpen, toggleMenu }} />
       <Navbar />
       <Main element={element} />
-      {/* <button onClick={handleDarkMode} className="border-2">
+      {/* 
+      <button onClick={handleDarkMode} className="border-2">
           toggler dark/ligh mode
-        </button> */}
+      </button>
+      */}
     </div>
   );
 };
