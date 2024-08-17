@@ -3,6 +3,7 @@ import Header from './Header';
 import Main from './Main';
 import Navbar from './Navbar';
 import NavbarMobile from './NavbarMobile';
+import NavbarPopup from './NavbarPopup';
 
 const Layout = ({ element }: { element: React.ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,15 +25,17 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     }
   }, [isDarkMode]);
 
-  return (
+  return isOpen ? (
+    <NavbarPopup />
+  ) : (
     <div className="border dark:border-white border-black min-h-[90vh] m-2 sm:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
       <Header />
-      <NavbarMobile {...{ isOpen, toggleMenu }} />
+      <NavbarMobile {...{ toggleMenu }} />
       <Navbar />
       <Main element={element} />
       {/* <button onClick={handleDarkMode} className="border-2">
-        toggler dark/ligh mode
-      </button> */}
+          toggler dark/ligh mode
+        </button> */}
     </div>
   );
 };
