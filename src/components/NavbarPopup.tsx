@@ -2,7 +2,13 @@ import { Link } from 'react-router-dom';
 
 import { MouseEventHandler } from 'react';
 
-const NavbarPopup = ({ setIsOpen, toggleMenu }: { setIsOpen: Function, toggleMenu: MouseEventHandler<HTMLImageElement> }) => {
+const NavbarPopup = ({
+  setIsOpen,
+  toggleMenu,
+}: {
+  setIsOpen: Function;
+  toggleMenu: MouseEventHandler<HTMLImageElement>;
+}) => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
@@ -12,17 +18,14 @@ const NavbarPopup = ({ setIsOpen, toggleMenu }: { setIsOpen: Function, toggleMen
   const handleClickedLink = () => setIsOpen(false);
   return (
     <nav className="p-5">
-      <button
-        type="button"
-        className="border w-full flex justify-end"
-        >
+      <button type="button" className="w-full flex justify-end">
         <img
           src="https://img.icons8.com/material-rounded/50/close-window.png"
           alt="close-window"
           onClick={toggleMenu}
         />
       </button>
-      <ul className="border flex flex-col justify-center items-center h-[70vh] gap-2">
+      <ul className="flex flex-col justify-center items-center h-[70vh] gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
             <Link to={item.path} onClick={handleClickedLink}>
