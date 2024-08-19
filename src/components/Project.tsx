@@ -9,9 +9,11 @@ const Project = ({ project }: { project: any }) => {
 
   return (
     <a href={project.demoLink} target="_blank">
-      <section className="flex items-end flex-wrap">
-        <h3 className="uppercase underline text-6xl">{project.name}</h3>
-        <div className="flex text-sm ml-2">
+      <section className="flex items-end flex-wrap md:flex-nowrap gap-1 sm:gap-2 justify-start">
+        <h3 className="uppercase underline text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-7xl">
+          {project.name}
+        </h3>
+        <div className="flex text-xs lg:text-sm flex-wrap">
           <span>{formattedDate} /&nbsp;</span>
           <div>
             {project.stacks.map((stack: string) => (

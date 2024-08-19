@@ -16,14 +16,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="col-span-1 row-span-5">
+    <nav className="hidden sm:block sm:col-span-1 sm:row-span-5 sm:pt-8">
       <ul className="flex flex-col gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
             <Link
               to={item.path}
               onClick={() => handleClickedLink(item.name)}
-              className={clickedLink === item.name ? 'underline' : ''}
+              className={`${
+                clickedLink === item.name ? 'underline' : ''
+              } 2xl:text-xl`}
             >
               {item.name}
             </Link>
