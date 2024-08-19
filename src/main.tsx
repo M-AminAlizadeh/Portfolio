@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import _404 from './pages/404';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: 'about',
     element: <Layout element={<AboutPage />} />,
+  },
+  {
+    path: '*',
+    element: <_404 />,
   },
 ]);
 
