@@ -3,7 +3,7 @@ import SocialLinks from '../components/SocialLinks';
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-col md:flex-row">
       <ContactForm />
       <SocialLinks />
     </div>
