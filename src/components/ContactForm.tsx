@@ -5,7 +5,7 @@ const ContactForm = () => {
     <form
       action={formspreeUrl}
       method="POST"
-      className="flex-1 flex flex-col p-4 w-full"
+      className="flex-1 flex flex-col p-4 w-full max-w-md"
     >
       <div className="mb-4">
         <label
