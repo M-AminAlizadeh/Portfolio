@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
-import { Container } from '@tsparticles/engine';
+import { Container, IOptions, RecursivePartial } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
 import Header from './Header';
 import Main from './Main';
@@ -12,7 +12,7 @@ import Theme from './Theme';
 const Layout = ({ element }: { element: React.ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [init, setInit] = useState(false);
+  const [, setInit] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -1081,7 +1081,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
         options={
           isDarkMode
             ? optionsDarkMode
-            : (optionsLightMode as RecursivePartial<IOptions>)
+            : (optionsLightMode as unknown as RecursivePartial<IOptions>)
         }
       />
       <div className="relative z-10 border dark:border-white border-black min-h-[90vh] m-2 sm:m-5 lg:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
