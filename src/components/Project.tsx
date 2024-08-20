@@ -1,7 +1,10 @@
 const Project = ({ project }: { project: any }) => {
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    const options = { year: 'numeric', month: 'long' };
+    const options: Intl.DateTimeFormatOptions = {
+      year: 'numeric',
+      month: 'long',
+    };
     return date.toLocaleDateString('en-US', options).replace(' ', '.');
   };
 
@@ -9,7 +12,7 @@ const Project = ({ project }: { project: any }) => {
 
   return (
     <a href={project.demoLink} target="_blank">
-      <section className="flex items-end flex-wrap md:flex-nowrap gap-1 sm:gap-2 justify-start">
+      <section className="select-none dark:text-white flex items-end flex-wrap md:flex-nowrap gap-1 sm:gap-2 justify-start">
         <h3 className="uppercase underline text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-7xl">
           {project.name}
         </h3>

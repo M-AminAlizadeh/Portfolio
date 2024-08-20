@@ -1,6 +1,6 @@
 const AboutPage = () => {
   return (
-    <article className="text-lg tracking-wide flex flex-col gap-2">
+    <article className="dark:text-white text-lg tracking-wide flex flex-col gap-2 select-none">
       <p>
         Hello, I'm Amin Alizadeh, a Full-stack Web Developer with a strong
         passion for turning creative ideas into functional and visually
