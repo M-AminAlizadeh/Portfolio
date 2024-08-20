@@ -8,6 +8,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import _404 from './pages/404';
+import { GlobalStateProvider } from './context/GlobalStateContext';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <GlobalStateProvider>
+      <RouterProvider router={router} />
+    </GlobalStateProvider>
   </StrictMode>
 );
