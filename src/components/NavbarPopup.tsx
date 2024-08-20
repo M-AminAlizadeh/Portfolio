@@ -2,11 +2,8 @@ import { Link } from 'react-router-dom';
 import { useGlobalState } from '../context/GlobalStatesContext';
 
 const NavbarPopup = () => {
-   const {
-    isOpen,
-    setIsOpen,
-  } = useGlobalState();
-  
+  const { isOpen, setIsOpen } = useGlobalState();
+
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
@@ -26,7 +23,11 @@ const NavbarPopup = () => {
       <ul className="flex flex-col justify-center items-center h-[70vh] gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
-            <Link to={item.path} onClick={() => setIsOpen(!isOpen)} className="text-2xl">
+            <Link
+              to={item.path}
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-2xl"
+            >
               {item.name}
             </Link>
           </li>

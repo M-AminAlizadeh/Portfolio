@@ -12,18 +12,9 @@ import Preloader from './Preloader';
 import { useGlobalState } from '../context/GlobalStatesContext';
 
 const Layout = ({ element }: { element: React.ReactNode }) => {
-  const {
-    isDarkMode,
-    isOpen,
-    setIsOpen,
-    isLoading,
-    setIsLoading,
-  } = useGlobalState();
+  const { isDarkMode, isOpen, setIsOpen, isLoading, setIsLoading } =
+    useGlobalState();
   const [, setInit] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   useEffect(() => {
     if (isDarkMode) {
@@ -42,9 +33,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     setIsLoading(false);
   }, [isDarkMode]);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
+  const particlesLoaded = async (container?: Container): Promise<void> => {};
 
   const optionsDarkMode = {
     autoPlay: true,
@@ -1084,7 +1073,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
   }
 
   return isOpen ? (
-    <NavbarPopup {...{ setIsOpen, toggleMenu }} />
+    <NavbarPopup />
   ) : (
     <div className="relative">
       <Particles
@@ -1098,7 +1087,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       />
       <div className="relative z-10 border dark:border-white border-black min-h-[90vh] m-2 sm:m-5 lg:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
         <Header />
-        <NavbarMobile {...{ setIsOpen, toggleMenu }} />
+        <NavbarMobile />
         <Navbar />
         <Main element={element} />
         <Theme />
