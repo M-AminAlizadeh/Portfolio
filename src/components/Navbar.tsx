@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="hidden sm:block sm:col-span-1 sm:row-span-5 sm:pt-8">
+    <nav className="select-none hidden sm:block sm:col-span-1 sm:row-span-5 sm:pt-8">
       <ul className="flex flex-col gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
