@@ -15,7 +15,7 @@ const Theme = ({
     }
   };
   return (
-    <div className="border-2 border-white absolute bottom-12 -left-20 flex flex-row-reverse gap-3  -rotate-90">
+    <div className="absolute bottom-12 text-sm -left-10 sm:-left-16 lg:-left-20 lg:text-base flex flex-row-reverse gap-3  -rotate-90">
       <div className="flex flex-row-reverse gap-1">
         <label htmlFor="dark">Dark</label>
         <input
