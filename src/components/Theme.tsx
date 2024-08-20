@@ -1,10 +1,8 @@
 import { useState } from 'react';
+import { useGlobalState } from '../context/GlobalStatesContext';
 
-const Theme = ({
-  setIsDarkMode,
-}: {
-  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-}) => {
+const Theme = () => {
+  const { setIsDarkMode } = useGlobalState();
   const [theme, setTheme] = useState('light');
   const handleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTheme(e.target.value);
