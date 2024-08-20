@@ -5,6 +5,7 @@ import {
   type ISourceOptions,
   MoveDirection,
   OutMode,
+  // Theme,
 } from '@tsparticles/engine';
 import Header from './Header';
 import Main from './Main';
@@ -12,15 +13,12 @@ import Navbar from './Navbar';
 import NavbarMobile from './NavbarMobile';
 import NavbarPopup from './NavbarPopup';
 import { loadSlim } from '@tsparticles/slim';
+import Theme from './Theme';
 
 const Layout = ({ element }: { element: React.ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [init, setInit] = useState(false);
-
-  const handleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -551,11 +549,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
         <NavbarMobile {...{ setIsOpen, toggleMenu }} />
         <Navbar />
         <Main element={element} />
-        {/*
-        <button onClick={handleDarkMode} className="border-2">
-            toggler dark/ligh mode
-        </button>
-        */}
+        <Theme setIsDarkMode={setIsDarkMode} />
       </div>
     </div>
   );
