@@ -25,7 +25,7 @@ const Navbar = () => {
               onClick={() => handleClickedLink(item.name)}
               className={`${
                 clickedLink === item.name ? 'underline' : ''
-              } 2xl:text-xl`}
+              } 2xl:text-xl dark:text-white`}
             >
               {item.name}
             </Link>
