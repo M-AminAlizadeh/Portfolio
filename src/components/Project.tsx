@@ -1,7 +1,10 @@
 const Project = ({ project }: { project: any }) => {
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    const options = { year: 'numeric', month: 'long' };
+    const options: Intl.DateTimeFormatOptions = {
+      year: 'numeric',
+      month: 'long',
+    };
     return date.toLocaleDateString('en-US', options).replace(' ', '.');
   };
 
