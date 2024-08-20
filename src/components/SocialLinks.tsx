@@ -1,4 +1,7 @@
+import { useGlobalState } from '../context/GlobalStatesContext';
+
 const SocialLinks = () => {
+  const { isDarkMode } = useGlobalState();
   const socialLinks = [
     {
       name: 'GitHub',
@@ -22,7 +25,7 @@ const SocialLinks = () => {
             {link.name}
             <img
               width="25"
-              src="https://img.icons8.com/pastel-glyph/64/external-link--v1.png"
+              src={`https://img.icons8.com/pastel-glyph/64/${isDarkMode ? 'ffffff' : '000000'}/external-link--v1.png`}
               alt="external-link--v1"
             />
           </a>
