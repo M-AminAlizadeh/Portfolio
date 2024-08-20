@@ -1102,7 +1102,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
         <NavbarMobile {...{ setIsOpen, toggleMenu }} />
         <Navbar />
         <Main element={element} />
-        <Theme setIsDarkMode={setIsDarkMode} />
+        <Theme />
       </div>
     </div>
   );
