@@ -14,7 +14,6 @@ import { useGlobalState } from '../context/GlobalStatesContext';
 const Layout = ({ element }: { element: React.ReactNode }) => {
   const {
     isDarkMode,
-    setIsDarkMode,
     isOpen,
     setIsOpen,
     isLoading,
