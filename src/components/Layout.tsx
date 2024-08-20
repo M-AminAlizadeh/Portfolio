@@ -9,12 +9,18 @@ import NavbarMobile from './NavbarMobile';
 import NavbarPopup from './NavbarPopup';
 import Theme from './Theme';
 import Preloader from './Preloader';
+import { useGlobalState } from '../context/GlobalStatesContext';
 
 const Layout = ({ element }: { element: React.ReactNode }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const {
+    isDarkMode,
+    setIsDarkMode,
+    isOpen,
+    setIsOpen,
+    isLoading,
+    setIsLoading,
+  } = useGlobalState();
   const [, setInit] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
