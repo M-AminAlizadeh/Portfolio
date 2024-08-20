@@ -1,6 +1,6 @@
 const HomePage = () => {
   return (
-    <div className="dark:text-white text-sm sm:text-lg tracking-wide flex flex-col gap-2 w-full lg:w-3/4">
+    <div className="select-none dark:text-white text-sm sm:text-lg tracking-wide flex flex-col gap-2 w-full lg:w-3/4">
       <p>
         Born in 1999 in Urmia, Iran, I am Amin, a software engineer who believes
         in the power of well-designed architecture to tackle any problem through
