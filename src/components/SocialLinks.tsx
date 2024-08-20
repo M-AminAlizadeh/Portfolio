@@ -17,7 +17,7 @@ const SocialLinks = () => {
             href={link.url}
             target="_blank"
             rel="noreferrer"
-            className="flex justify-start items-end capitalize underline"
+            className="dark:text-white flex justify-start items-end capitalize underline"
           >
             {link.name}
             <img
