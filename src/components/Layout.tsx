@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { Container } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
@@ -1078,8 +1078,11 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
-        options={isDarkMode ? optionsDarkMode : optionsLightMode}
-        className="border-2 border-red-800"
+        options={
+          isDarkMode
+            ? optionsDarkMode
+            : (optionsLightMode as RecursivePartial<IOptions>)
+        }
       />
       <div className="relative z-10 border dark:border-white border-black min-h-[90vh] m-2 sm:m-5 lg:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
         <Header />
