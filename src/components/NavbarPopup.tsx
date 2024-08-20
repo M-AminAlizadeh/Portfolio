@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useGlobalState } from '../context/GlobalStatesContext';
 
-import { MouseEventHandler } from 'react';
-
-const NavbarPopup = ({
-  toggleMenu,
-}: {
-  toggleMenu: MouseEventHandler<HTMLImageElement>;
-}) => {
+const NavbarPopup = () => {
+   const {
+    isOpen,
+    setIsOpen,
+  } = useGlobalState();
+  
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
@@ -20,13 +20,13 @@ const NavbarPopup = ({
         <img
           src="https://img.icons8.com/material-rounded/50/close-window.png"
           alt="close-window"
-          onClick={toggleMenu}
+          onClick={() => setIsOpen(!isOpen)}
         />
       </button>
       <ul className="flex flex-col justify-center items-center h-[70vh] gap-2">
         {navItems.map((item) => (
           <li key={item.name}>
-            <Link to={item.path} onClick={toggleMenu} className="text-2xl">
+            <Link to={item.path} onClick={() => setIsOpen(!isOpen)} className="text-2xl">
               {item.name}
             </Link>
           </li>
