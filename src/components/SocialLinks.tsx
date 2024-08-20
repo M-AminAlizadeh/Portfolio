@@ -10,7 +10,7 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <ul className="flex-1 flex flex-col justify-start items-center 2xl:items-start gap-2 p-4">
+    <ul className="select-none flex-1 flex flex-col justify-start items-center 2xl:items-start gap-2 p-4">
       {socialLinks.map((link) => (
         <li key={link.name}>
           <a
