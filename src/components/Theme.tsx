@@ -17,7 +17,7 @@ const Theme = ({
   return (
     <div className="absolute bottom-12 text-sm -left-10 sm:-left-16 lg:-left-20 lg:text-base flex flex-row-reverse gap-3  -rotate-90">
       <div className="flex flex-row-reverse gap-1">
-        <label htmlFor="dark">Dark</label>
+        <label htmlFor="dark" className='dark:text-white'>Dark</label>
         <input
           id="dark"
           name="theme"
@@ -29,7 +29,7 @@ const Theme = ({
         />
       </div>
       <div className="flex flex-row-reverse gap-1">
-        <label htmlFor="light">Light</label>
+        <label htmlFor="light" className='dark:text-white'>Light</label>
         <input
           id="light"
           name="theme"
