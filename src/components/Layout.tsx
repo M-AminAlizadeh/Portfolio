@@ -12,8 +12,7 @@ import Preloader from './Preloader';
 import { useGlobalState } from '../context/GlobalStatesContext';
 
 const Layout = ({ element }: { element: React.ReactNode }) => {
-  const { isDarkMode, isOpen, setIsOpen, isLoading, setIsLoading } =
-    useGlobalState();
+  const { isDarkMode, isOpen, isLoading, setIsLoading } = useGlobalState();
   const [, setInit] = useState(false);
 
   useEffect(() => {
