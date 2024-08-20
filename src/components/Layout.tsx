@@ -8,11 +8,13 @@ import Navbar from './Navbar';
 import NavbarMobile from './NavbarMobile';
 import NavbarPopup from './NavbarPopup';
 import Theme from './Theme';
+import Preloader from './Preloader';
 
 const Layout = ({ element }: { element: React.ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [, setInit] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -32,6 +34,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     }).then(() => {
       setInit(true);
     });
+    setIsLoading(false);
   }, [isDarkMode]);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
@@ -1070,6 +1073,10 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       },
     },
   };
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return isOpen ? (
     <NavbarPopup {...{ setIsOpen, toggleMenu }} />
