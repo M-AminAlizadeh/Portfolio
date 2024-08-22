@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
+import { IOptions, RecursivePartial } from '@tsparticles/engine';
 import Header from './Header';
 import Main from './Main';
 import Navbar from './Navbar';
@@ -33,7 +34,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
 
   const particlesLoaded = async () => {};
 
-  const optionsDarkMode = {
+  const optionsDarkMode: RecursivePartial<IOptions> = {
     autoPlay: true,
     background: {
       color: {
@@ -70,17 +71,17 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       events: {
         onClick: {
           enable: false,
-          mode: {},
+          mode: 'push',
         },
         onDiv: {
-          selectors: {},
+          selectors: '#selector',
           enable: false,
-          mode: {},
+          mode: 'repulse',
           type: 'circle',
         },
         onHover: {
           enable: false,
-          mode: {},
+          mode: 'repulse',
           parallax: {
             enable: false,
             force: 2,
@@ -236,9 +237,16 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
         close: true,
         fill: true,
         options: {},
-        type: {},
+        type: 'circle',
       },
-      groups: [],
+      groups: {
+        group1: {
+          // properties for group1
+        },
+        group2: {
+          // properties for group2
+        },
+      },
       move: {
         angle: {
           offset: 0,
@@ -520,7 +528,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     },
   };
 
-  const optionsLightMode = {
+  const optionsLightMode: RecursivePartial<IOptions> = {
     autoPlay: true,
     background: {
       color: {
@@ -560,14 +568,14 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
           mode: 'push',
         },
         onDiv: {
-          selectors: {},
+          selectors: '#selector',
           enable: false,
-          mode: {},
+          mode: 'repulse',
           type: 'circle',
         },
         onHover: {
           enable: false,
-          mode: {},
+          mode: 'repulse',
           parallax: {
             enable: false,
             force: 2,
@@ -755,9 +763,16 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
         close: true,
         fill: true,
         options: {},
-        type: {},
+        type: 'circle',
       },
-      groups: [],
+      groups: {
+        group1: {
+          // properties for group1
+        },
+        group2: {
+          // properties for group2
+        },
+      },
       move: {
         angle: {
           offset: 0,
