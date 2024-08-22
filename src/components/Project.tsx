@@ -1,0 +1,32 @@
+const Project = ({ project }: { project: any }) => {
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    const options: Intl.DateTimeFormatOptions = {
+      year: 'numeric',
+      month: 'long',
+    };
+    return date.toLocaleDateString('en-US', options).replace(' ', '.');
+  };
+
+  const formattedDate = formatDate(project.date);
+
+  return (
+    <a href={project.demoLink} target="_blank">
+      <section className="select-none dark:text-white flex items-end flex-wrap md:flex-nowrap gap-1 sm:gap-2 justify-start">
+        <h3 className="capitalize underline text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl">
+          {project.name}
+        </h3>
+        <div className="flex text-xs lg:text-sm flex-wrap">
+          <span>{formattedDate} /&nbsp;</span>
+          <div>
+            {project.stacks.map((stack: string) => (
+              <span key={stack}>{stack}, </span>
+            ))}
+          </div>
+        </div>
+      </section>
+    </a>
+  );
+};
+
+export default Project;

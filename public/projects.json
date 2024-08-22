@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Awesome books collection",
+    "demoLink": "https://m-aminalizadeh.github.io/Awesome-books-collection/",
+    "date": "2023-05-02",
+    "stacks": ["Vanilla JavaScript", "Bootstrap", "HTML5"]
+  },
+  {
+    "id": 2,
+    "name": "Logseq marketplace",
+    "demoLink": "https://logseq-marketplace.vercel.app/",
+    "date": "2023-09-11",
+    "stacks": ["React", "Tailwindcss"]
+  },
+  {
+    "id": 3,
+    "name": "Social links profile",
+    "demoLink": "https://social-links-profile-delta-beryl.vercel.app/",
+    "date": "2024-07-19",
+    "stacks": ["HTML5", "CSS3"]
+  }
+]
