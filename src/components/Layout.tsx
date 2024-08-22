@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
-import { Container, IOptions, RecursivePartial } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
 import Header from './Header';
 import Main from './Main';
@@ -32,7 +31,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     setIsLoading(false);
   }, [isDarkMode]);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {};
+  const particlesLoaded = async () => {};
 
   const optionsDarkMode = {
     autoPlay: true,
@@ -47,7 +46,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       opacity: 1,
     },
     backgroundMask: {
-      composite: 'destination-out',
+      composite: 'source-over' as GlobalCompositeOperation,
       cover: {
         color: {
           value: '#fff',
@@ -67,7 +66,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     duration: 0,
     fpsLimit: 120,
     interactivity: {
-      detectsOn: 'window',
+      detectsOn: 'canvas' as 'window' | 'canvas' | 'parent' | undefined,
       events: {
         onClick: {
           enable: false,
@@ -534,7 +533,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       opacity: 1,
     },
     backgroundMask: {
-      composite: 'destination-out',
+      composite: 'source-over' as GlobalCompositeOperation,
       cover: {
         color: {
           value: '#fff',
@@ -554,7 +553,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     duration: 0,
     fpsLimit: 120,
     interactivity: {
-      detectsOn: 'window',
+      detectsOn: 'canvas' as 'window' | 'canvas' | 'parent' | undefined,
       events: {
         onClick: {
           enable: true,
@@ -1078,11 +1077,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
-        options={
-          isDarkMode
-            ? optionsDarkMode
-            : (optionsLightMode as unknown as RecursivePartial<IOptions>)
-        }
+        options={isDarkMode ? optionsDarkMode : optionsLightMode}
       />
       <div className="relative z-10 border dark:border-white border-black min-h-[90vh] m-2 sm:m-5 lg:m-10 p-4 sm:p-10 grid grid-cols-5 auto-rows-min">
         <Header />
