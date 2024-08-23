@@ -39,15 +39,9 @@ export const optionsLightMode: RecursivePartial<IOptions> = {
           enable: true,
           mode: 'push',
         },
-        onDiv: {
-          selectors: {},
-          enable: false,
-          mode: {},
-          type: 'circle',
-        },
         onHover: {
           enable: false,
-          mode: {},
+          mode: undefined,
           parallax: {
             enable: false,
             force: 2,
@@ -235,9 +229,9 @@ export const optionsLightMode: RecursivePartial<IOptions> = {
         close: true,
         fill: true,
         options: {},
-        type: {},
+        type: undefined,
       },
-      groups: [],
+      groups: {},
       move: {
         angle: {
           offset: 0,

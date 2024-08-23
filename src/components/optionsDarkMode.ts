@@ -37,17 +37,11 @@ export const optionsDarkMode: RecursivePartial<IOptions> = {
       events: {
         onClick: {
           enable: false,
-          mode: {},
-        },
-        onDiv: {
-          selectors: {},
-          enable: false,
-          mode: {},
-          type: 'circle',
+          mode: undefined,
         },
         onHover: {
           enable: false,
-          mode: {},
+          mode: undefined,
           parallax: {
             enable: false,
             force: 2,
@@ -203,9 +197,9 @@ export const optionsDarkMode: RecursivePartial<IOptions> = {
         close: true,
         fill: true,
         options: {},
-        type: {},
+        type: undefined,
       },
-      groups: [],
+      groups: {},
       move: {
         angle: {
           offset: 0,
