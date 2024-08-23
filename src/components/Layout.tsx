@@ -47,7 +47,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       opacity: 1,
     },
     backgroundMask: {
-      composite: 'source-over' as GlobalCompositeOperation,
+      composite: 'destination-out',
       cover: {
         color: {
           value: '#fff',
@@ -67,21 +67,21 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     duration: 0,
     fpsLimit: 120,
     interactivity: {
-      detectsOn: 'canvas' as 'window' | 'canvas' | 'parent' | undefined,
+      detectsOn: 'window',
       events: {
         onClick: {
           enable: false,
-          mode: 'push',
+          mode: {},
         },
         onDiv: {
-          selectors: '#selector',
+          selectors: {},
           enable: false,
-          mode: 'repulse',
+          mode: {},
           type: 'circle',
         },
         onHover: {
           enable: false,
-          mode: 'repulse',
+          mode: {},
           parallax: {
             enable: false,
             force: 2,
@@ -237,16 +237,9 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
         close: true,
         fill: true,
         options: {},
-        type: 'circle',
+        type: {},
       },
-      groups: {
-        group1: {
-          // properties for group1
-        },
-        group2: {
-          // properties for group2
-        },
-      },
+      groups: [],
       move: {
         angle: {
           offset: 0,
@@ -541,7 +534,7 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
       opacity: 1,
     },
     backgroundMask: {
-      composite: 'source-over' as GlobalCompositeOperation,
+      composite: 'destination-out',
       cover: {
         color: {
           value: '#fff',
@@ -561,21 +554,21 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
     duration: 0,
     fpsLimit: 120,
     interactivity: {
-      detectsOn: 'canvas' as 'window' | 'canvas' | 'parent' | undefined,
+      detectsOn: 'window',
       events: {
         onClick: {
           enable: true,
           mode: 'push',
         },
         onDiv: {
-          selectors: '#selector',
+          selectors: {},
           enable: false,
-          mode: 'repulse',
+          mode: {},
           type: 'circle',
         },
         onHover: {
           enable: false,
-          mode: 'repulse',
+          mode: {},
           parallax: {
             enable: false,
             force: 2,
@@ -763,16 +756,9 @@ const Layout = ({ element }: { element: React.ReactNode }) => {
         close: true,
         fill: true,
         options: {},
-        type: 'circle',
+        type: {},
       },
-      groups: {
-        group1: {
-          // properties for group1
-        },
-        group2: {
-          // properties for group2
-        },
-      },
+      groups: [],
       move: {
         angle: {
           offset: 0,
